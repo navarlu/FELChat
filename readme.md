@@ -9,14 +9,22 @@ sudo tar -C ~/.local/ -xzf ollama-linux-amd64.tgz
 
 Download model:
 ```
-ollama pull model_name
+$ ollama pull model_name
 ```
 where the model names is e.g. ```deepseek-r1:1.5b```. The Ollama model library is [here](https://ollama.com/library) .
 
 Run Ollama:
 ```
-ollama serve
+$ ollama serve
 ```
+
+Create environment:
+```
+$ python3 -m venv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+The python needs to be 3.9 or greater.
 
 # Sources
 
