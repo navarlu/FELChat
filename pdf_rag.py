@@ -1,9 +1,10 @@
-from langchain_community.document_loaders import PDFPlumberLoader
+from langchain_community.document_loaders import PDFPlumberLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_ollama import OllamaEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
+from langchain.docstore.document import Document
 
 import argparse
 
@@ -14,6 +15,19 @@ Question: {question}
 Context: {context} 
 Answer:
 """
+
+def load_documents(dir):
+
+    # load all text files in dir, with extensionn.txt, using TextLoader
+    for file in 
+
+
+    #loader = TextLoader('./texts/article1.txt')
+    #doc1 = loader.load()
+    #loader = TextLoader('./texts/article2.txt')
+    #doc2 = loader.load()
+    #documents = [doc1,doc2]
+    #return documents
 
 def load_pdf(file_path):
 
@@ -34,8 +48,8 @@ def split_text(documents):
 def index_docs(documents):
     vector_store.add_documents(documents)
 
-def retrieve_docs(query):
-    return vector_store.similarity_search(query)
+def retrieve_docs(query,k=4):
+    return vector_store.similarity_search(query,k=k)
 
 def answer_question(question, documents):
     context = "\n\n".join([doc.page_content for doc in documents])
@@ -65,9 +79,16 @@ if __name__ == "__main__":
     model = OllamaLLM(model=model)
 
     #
-    documents = load_pdf(pdfs_directory + "sample.pdf")
+    documents1 = load_pdf(pdfs_directory + "sample.pdf")
+    documents = load_documents()
+
     chunked_documents = split_text(documents)
     index_docs(chunked_documents)
+
+    for i, doc in enumerate(chunked_documents):
+        print(f"-- Chunk {i} ------------------------------------------")
+        print(f"\n* {doc.page_content} [{doc.metadata}]")
+
 
 
     while True:
@@ -76,7 +97,15 @@ if __name__ == "__main__":
             break
 
         related_documents = retrieve_docs(question)
+
+        for i, doc in enumerate(related_documents):
+            print(f"-- Retrieved document {i}------------------------------------------")
+            print(f"* {doc.page_content} [{doc.metadata}]")
+
         answer = answer_question(question, related_documents)
 
+        
+        print('------------------------------------------------------------')
         print(answer)
+        print('------------------------------------------------------------')
 
