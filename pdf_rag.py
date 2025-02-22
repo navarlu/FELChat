@@ -16,19 +16,6 @@ Context: {context}
 Answer:
 """
 
-def load_documents(dir):
-
-    # load all text files in dir, with extensionn.txt, using TextLoader
-    for file in 
-
-
-    #loader = TextLoader('./texts/article1.txt')
-    #doc1 = loader.load()
-    #loader = TextLoader('./texts/article2.txt')
-    #doc2 = loader.load()
-    #documents = [doc1,doc2]
-    #return documents
-
 def load_pdf(file_path):
 
     loader = PDFPlumberLoader(file_path)
@@ -45,16 +32,13 @@ def split_text(documents):
 
     return text_splitter.split_documents(documents)
 
-def index_docs(documents):
-    vector_store.add_documents(documents)
-
 def retrieve_docs(query,k=4):
     return vector_store.similarity_search(query,k=k)
 
 def answer_question(question, documents):
     context = "\n\n".join([doc.page_content for doc in documents])
     prompt = ChatPromptTemplate.from_template(template)
-    chain = prompt | model
+    chain = prompt | llm
 
     return chain.invoke({"question": question, "context": context})
 
@@ -63,49 +47,43 @@ if __name__ == "__main__":
 
     # use argparse to get input argument from the terminal which specifies directory with input PDFs
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pdfs_directory", default="./pdfs/", type=str, help="Directory with input PDFs")
-    parser.add_argument("--model", default="deepseek-r1:1.5b", type=str, help="Model to use for embeddings and reasoning")
+    parser.add_argument("pdf_file", type=str, help="PDF file.")
+    parser.add_argument("--reasoning", default="deepseek-r1:32b", type=str, help="Model to use for reasoning.")
+    parser.add_argument("--embedding", default="mxbai-embed-large:latest", type=str, help="Model to use for embedding.")
+    parser.add_argument("--num_chunks", default=4, type=int, help="Number of retrieved chunks.")
 
     args = parser.parse_args()
-    pdfs_directory = args.pdfs_directory    
-    model = args.model
 
-    #embeddings = OllamaEmbeddings(model="deepseek-r1:14b")
-    #model = OllamaLLM(model="deepseek-r1:14b")
-
-    embeddings = OllamaEmbeddings(model=model)
-    vector_store = InMemoryVectorStore(embeddings)
-
-    model = OllamaLLM(model=model)
+    pdf_file = args.pdf_file
+    reasoning_model = args.reasoning
+    embedding_model = args.embedding
+    num_chunks = args.num_chunks
 
     #
-    documents1 = load_pdf(pdfs_directory + "sample.pdf")
-    documents = load_documents()
+    print(f"reasoning model: {reasoning_model}")
+    print(f"embedding model: {embedding_model}")
+    print(f"# retrieved chunks: {num_chunks}")
 
+    #
+    embeddings = OllamaEmbeddings(model=embedding_model)
+    vector_store = InMemoryVectorStore(embeddings)
+    llm = OllamaLLM(model=reasoning_model)
+
+    #
+    documents = load_pdf(pdf_file)
     chunked_documents = split_text(documents)
-    index_docs(chunked_documents)
-
-    for i, doc in enumerate(chunked_documents):
-        print(f"-- Chunk {i} ------------------------------------------")
-        print(f"\n* {doc.page_content} [{doc.metadata}]")
-
-
+    print(f"PDF split to {len(chunked_documents)} chunks.")
+    vector_store.add_documents(documents)
 
     while True:
+        print("---")        
         question = input('Ask a question (type "bye" to exit): ')
         if question == "bye":
             break
 
-        related_documents = retrieve_docs(question)
-
-        for i, doc in enumerate(related_documents):
-            print(f"-- Retrieved document {i}------------------------------------------")
-            print(f"* {doc.page_content} [{doc.metadata}]")
+        related_documents = retrieve_docs(question,num_chunks)
 
         answer = answer_question(question, related_documents)
 
-        
-        print('------------------------------------------------------------')
+        print("---")        
         print(answer)
-        print('------------------------------------------------------------')
-
