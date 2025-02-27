@@ -1,4 +1,4 @@
-# PDF_CHAT – super-lightweight RAG-Based Chatbot for conversational interaction with PDF files in a text console.
+# PDF_CHAT – simplistic RAG-Based Chatbot for conversation with PDF files.
 
 # Install
 
@@ -22,9 +22,9 @@ $ pip install -r requirements.txt
 ```
 The python needs to be 3.9 or greater.
 
-# Run PDF_CHAT from console
+# Console based PDF_CHAT
 
-1. Download appropriate LLMs, e.g.
+1. Download LLMs you want to use, e.g.
 ```
 $ ollama pull deepseek-r1:14b
 $ ollama pull mxbai-embed-large:latest
@@ -35,7 +35,7 @@ $ ollama pull mxbai-embed-large:latest
 $ ollama serve
 ```
 
-3. Run the RAG script with specification of LLM for text embedding (retrieval) and reasoning, e.g.:
+3. Run the RAG script with specification of LLM for text embedding (retrieval) and reasoning (question answering), e.g.:
 
 ```
 $ python pdf_rag.py --reasoning deepseek-r1:32b --embedding mxbai-embed-large:latest pdfs/StatuteCTU.pdf
