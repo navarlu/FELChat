@@ -16,6 +16,13 @@ Context: {context}
 Answer:
 """
 
+#template = """
+#Jsi asistentem pro zodpovídání otázek. K zodpovězení otázky použijte následující části vyhledaného kontextu. Pokud odpověď neznáš, řekni, že nevíš. Použij maximálně tři věty a odpověz stručně.
+#Otázka: {question} 
+#Kontext: {context} 
+#Odpověď:
+#"""
+
 def load_pdf(file_path):
 
     loader = PDFPlumberLoader(file_path)
