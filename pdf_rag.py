@@ -5,9 +5,9 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
 from langchain.docstore.document import Document
-
+import pickle
 import argparse
-
+import os
 
 template = """
 You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.
@@ -49,47 +49,68 @@ def answer_question(question, documents):
 
     return chain.invoke({"question": question, "context": context})
 
+VECTOR_STORE_PATH = "vector_store.pkl"
+UPDATE_VECTORS = False  # Set to True if vectors should be updated before starting the conversation
+
+
 
 if __name__ == "__main__":
+    # Hardcoded values
+    reasoning_model = "deepseek-r1:14b"
+    reasoning_model = "llama3.1:latest"
+    
+    embedding_model = "mxbai-embed-large:latest"
+    num_chunks = 4
+    pdf_file = "pdfs/StatuteCTU.pdf"
 
-    # use argparse to get input argument from the terminal which specifies directory with input PDFs
-    parser = argparse.ArgumentParser()
-    parser.add_argument("pdf_file", type=str, help="PDF file.")
-    parser.add_argument("--reasoning", default="deepseek-r1:32b", type=str, help="Model to use for reasoning.")
-    parser.add_argument("--embedding", default="mxbai-embed-large:latest", type=str, help="Model to use for embedding.")
-    parser.add_argument("--num_chunks", default=4, type=int, help="Number of retrieved chunks.")
+    # Print the configurations
+    print(f"Reasoning model: {reasoning_model}")
+    print(f"Embedding model: {embedding_model}")
+    print(f"# Retrieved chunks: {num_chunks}")
+    print(f"PDF file: {pdf_file}")
 
-    args = parser.parse_args()
-
-    pdf_file = args.pdf_file
-    reasoning_model = args.reasoning
-    embedding_model = args.embedding
-    num_chunks = args.num_chunks
-
-    #
-    print(f"reasoning model: {reasoning_model}")
-    print(f"embedding model: {embedding_model}")
-    print(f"# retrieved chunks: {num_chunks}")
-
-    #
     embeddings = OllamaEmbeddings(model=embedding_model)
-    vector_store = InMemoryVectorStore(embeddings)
+
+    # Check if vector store exists and whether to update it
+    if UPDATE_VECTORS or not os.path.exists(VECTOR_STORE_PATH) or os.path.getsize(VECTOR_STORE_PATH) == 0:
+        print("Creating or updating vector store...")
+        vector_store = InMemoryVectorStore(embeddings)
+        documents = load_pdf(pdf_file)
+        chunked_documents = split_text(documents)
+        print(f"PDF split into {len(chunked_documents)} chunks.")
+        vector_store.add_documents(chunked_documents)
+
+        # Save only the processed document data
+        with open(VECTOR_STORE_PATH, "wb") as f:
+            pickle.dump(chunked_documents, f)
+    else:
+        print("Loading existing vector store...")
+        try:
+            with open(VECTOR_STORE_PATH, "rb") as f:
+                stored_documents = pickle.load(f)
+            vector_store = InMemoryVectorStore(embeddings)
+            vector_store.add_documents(stored_documents)
+        except (EOFError, pickle.UnpicklingError):
+            print("Error loading vector store, recreating it...")
+            vector_store = InMemoryVectorStore(embeddings)
+            documents = load_pdf(pdf_file)
+            chunked_documents = split_text(documents)
+            print(f"PDF split into {len(chunked_documents)} chunks.")
+            vector_store.add_documents(chunked_documents)
+            with open(VECTOR_STORE_PATH, "wb") as f:
+                pickle.dump(chunked_documents, f)
+
+    # Initialize LLM
     llm = OllamaLLM(model=reasoning_model)
 
-    #
-    documents = load_pdf(pdf_file)
-    chunked_documents = split_text(documents)
-    print(f"PDF split to {len(chunked_documents)} chunks.")
-    vector_store.add_documents(documents)
-
+    # Interactive Q&A loop
     while True:
         print("---")        
         question = input('Ask a question (type "bye" to exit): ')
-        if question == "bye":
+        if question.lower() == "bye":
             break
 
-        related_documents = retrieve_docs(question,num_chunks)
-
+        related_documents = retrieve_docs(question, num_chunks)
         answer = answer_question(question, related_documents)
 
         print("---")        
