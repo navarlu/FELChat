@@ -1,0 +1,23 @@
+{
+  "index": {
+    "directory": "data/vectorstore/index_storage",
+    "name": "index_fel_pdf_data",
+    "window_size": 3
+  },
+  "folders": {
+    "in_database": "data/fel/in_database/",
+    "tmp": "data/fel/tmp/",
+    "save_folder": "data/fel/outcoming_raw/",
+    "save_folder2": "data/fel/tmp/"
+  },
+
+  "streamlit": {
+    "port": 8501,
+    "url": "http://localhost:8501"
+  },
+  "flask": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "debug": false
+  }
+}
