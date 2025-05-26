@@ -23,12 +23,11 @@ INDEX_NAME      = config["index"]["name"]
 WINDOW_SIZE     = config["index"]["window_size"]
 
 IN_DATABASE_FOLDER = config["folders"]["in_database"]
-TMP_FOLDER = "/home/karel/FEL/PVTY/FELChat/data/tmp"
+TMP_FOLDER = config["folders"]["tmp"]
 SAVE_FOLDER        = config["folders"]["save_folder"]
 SAVE_FOLDER2       = config["folders"]["save_folder2"]
 
-DASHBOARD_PORT  = config["dashboard"]["port"]
-DASHBOARD_VIS = config["dashboard"]["visualization"]
+
 STREAMLIT_PORT  = config["streamlit"]["port"]
 STREAMLIT_URL   = config["streamlit"]["url"]
 
