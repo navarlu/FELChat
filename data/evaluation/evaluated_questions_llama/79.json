@@ -1,0 +1,42 @@
+{
+    "id": 79,
+    "question": "What is the role of the CTU Academic Senate?",
+    "answer": "The CTU Academic Senate approves the Study and Examination Rules and any amendments to them.",
+    "article": "Article 37(2)",
+    "out_of_scope": false,
+    "answer_generated": "The CTU Academic Senate must approve of the appointment of the members of the CTU Disciplinary Commission.",
+    "context": "Document 1: One half of the members of the D isciplinary Commission are students.  A faculty’s  Commission has \na minimum of four and a maximum of eight members.  Two academic workers and two students \nare appointed as subs titutes.  \n (4) The m embers of the CTU Disciplinary Commission are appointed by the rector from among the \nmembers of the  CTU academic staff, namely from the academic staff working at a university \ninstitute that participates in the implementation of programmes ou tside faculties and from \nstudents enrolled in one of the programmes outside faculties.  Two academic workers and two \nstudents are appointed as substitutes.  The CTU Academic Senate must approve of the \nappointment of the members of the CTU Disciplinary Commis sion.  One half of the members of the \nDisciplinary Commission are students enrolled in one of the programmes implemented outside \nfaculties; the Commission has a minimum of four members; all university institutes that \nparticipate in the implementation of pro grammes outside faculties have an equal number of \nmembers in the Commission, which applies to  both academic workers a nd students.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: One half of the members of the D isciplinary Commission are students.  A faculty’s  Commission has \na minimum of four and a maximum of eight members.  Two academic workers and two students \nare appointed as subs titutes.  \n (4) The m embers of the CTU Disciplinary Commission are appointed by the rector from among the \nmembers of the  CTU academic staff, namely from the academic staff working at a university \ninstitute that participates in the implementation of programmes ou tside faculties and from \nstudents enrolled in one of the programmes outside faculties.  Two academic workers and two \nstudents are appointed as substitutes.  The CTU Academic Senate must approve of the \nappointment of the members of the CTU Disciplinary Commis sion.  One half of the members of the \nDisciplinary Commission are students enrolled in one of the programmes implemented outside \nfaculties; the Commission has a minimum of four members; all university institutes that \nparticipate in the implementation of pro grammes outside faculties have an equal number of \nmembers in the Commission, which applies to  both academic workers a nd students.  \n\n    ---------------------------------------------------------------\n    Query: What is the role of the CTU Academic Senate?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.3333333333333333,
+        "Groundedness": 1.0,
+        "Answer Relevance": 0.3333333333333333
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.537001848220825,
+        "generation_time_sec": 1.1567354202270508,
+        "rag_total_time_sec": 3.693737268447876,
+        "evaluation_time_sec": 2.653517246246338,
+        "total_time_sec": 6.71670937538147
+    },
+    "token_estimates": {
+        "input_tokens": 548,
+        "output_tokens": 23,
+        "total_tokens": 571,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

@@ -5,3 +5,6 @@ custom_index
 sentence_index
 __pycache__/
 default.sqlite
+data/configuration/config.json
+data/vectorstore/
+FELCHAT_env

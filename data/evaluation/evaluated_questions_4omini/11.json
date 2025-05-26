@@ -1,0 +1,42 @@
+{
+    "id": 11,
+    "question": "Is the overall result of the state final examination evaluated on a scale from A to F?",
+    "answer": "Yes",
+    "article": "Article 11(1)",
+    "out_of_scope": false,
+    "answer_generated": "No. The overall results of the completed studies are evaluated as \"pass with distinction\" or \"pass\" (Article 18(1)).",
+    "context": "Document 1: (6) If the part of the state  final  examination  which  is repeated  is evaluated  by an F grade,  the studies  \nare terminated  pursuant  to Section  56, Para  1 (b) of the Act and Article  34, Para  7 (b) hereof.   The \ndecision -making  in this matter  is governed  by Section  68 of the Act. \n (7) The student  must  be informed  in a verifiable  manner  about  the results  of the individual  parts  of \nthe state  final  examination  stipulated  by Article  16, Para  3 (a) to (c) hereo f, including  the overall  \nresult  of the state  final  examination.  \n \n Article  18 \nOverall  study  results  \n(1) The overall  results  of the completed  studies  are evaluated  on a scale  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n17 a) Pass  with  distinction,  \nb) Pass.  \n (2) The overall  results  of the completed  studies  are evaluated  as “pass  with  distinction”,  provided  \nduring  their  studies  the student  achieved  weighted  average  study  results  under  Article  12 hereof  \nof a maximum  of 1.5 in the bachelor  study  programme,  and 1.30  in the master  study  programme,  \nand the overall  result  of the state  final  examination  was an A. \n (3) The overall  study  results  are stated  in the university  diploma  and in the documents  proving  the \nsuccessful  completion  of studies.  \n \n Part  IV \nSTUDY  IN DOCTORAL  STUDY  PROGRAMMES  \nArticle  19 \nOrganization  of studies  in doctoral  study  programmes  \n(1) Studies  in doctoral  study  programmes  are carried  out in accordance  with  individual  study  plans  \n(hereinafter  as “ISP”)  pursuant  to Article  26 hereof  and are supervised  by a supervisor.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (6) If the part of the state  final  examination  which  is repeated  is evaluated  by an F grade,  the studies  \nare terminated  pursuant  to Section  56, Para  1 (b) of the Act and Article  34, Para  7 (b) hereof.   The \ndecision -making  in this matter  is governed  by Section  68 of the Act. \n (7) The student  must  be informed  in a verifiable  manner  about  the results  of the individual  parts  of \nthe state  final  examination  stipulated  by Article  16, Para  3 (a) to (c) hereo f, including  the overall  \nresult  of the state  final  examination.  \n \n Article  18 \nOverall  study  results  \n(1) The overall  results  of the completed  studies  are evaluated  on a scale  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n17 a) Pass  with  distinction,  \nb) Pass.  \n (2) The overall  results  of the completed  studies  are evaluated  as “pass  with  distinction”,  provided  \nduring  their  studies  the student  achieved  weighted  average  study  results  under  Article  12 hereof  \nof a maximum  of 1.5 in the bachelor  study  programme,  and 1.30  in the master  study  programme,  \nand the overall  result  of the state  final  examination  was an A. \n (3) The overall  study  results  are stated  in the university  diploma  and in the documents  proving  the \nsuccessful  completion  of studies.  \n \n Part  IV \nSTUDY  IN DOCTORAL  STUDY  PROGRAMMES  \nArticle  19 \nOrganization  of studies  in doctoral  study  programmes  \n(1) Studies  in doctoral  study  programmes  are carried  out in accordance  with  individual  study  plans  \n(hereinafter  as “ISP”)  pursuant  to Article  26 hereof  and are supervised  by a supervisor.  \n    ---------------------------------------------------------------\n    Query: Is the overall result of the state final examination evaluated on a scale from A to F?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 1.0,
+        "Answer Relevance": 0.0
+    },
+    "evaluation_cost": {
+        "amount": 0.00011865,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.5049638748168945,
+        "generation_time_sec": 1.6465022563934326,
+        "rag_total_time_sec": 3.151466131210327,
+        "evaluation_time_sec": 2.5726113319396973,
+        "total_time_sec": 6.0480797290802
+    },
+    "token_estimates": {
+        "input_tokens": 708,
+        "output_tokens": 0,
+        "total_tokens": 708,
+        "cost_usd": 4.2e-05,
+        "cost_czk": 0.000998
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "id": 23,
+    "question": "Can students enrol in a subject more than twice?",
+    "answer": "No",
+    "article": "Article 6(5)",
+    "out_of_scope": false,
+    "answer_generated": "No, a student may enrol in each subject only twice. Article(3)(5).",
+    "context": "Document 1: (3) Students  can re-enrol  for a second  time  in subjects  that they  have  not successfully  completed.  \n The dean  may,  in justified  cases,  upon  a student’s  request  authorize  a re-enrol  in a subject  that \nhas been  successfully  completed.   In this case,  the grade  for the first enrolment  in the subject  is \nchanged  to F. \n (4) A re-enrol  in a subject  also means  an enrolment  in the same  subject  in another  language  or within  \nanother  study  programme,  as well as enrolment  in a subject  that has been  defined  by the study  \nplan  as an equivalent  or substitute  for this subject.  \n (5) A student  may  enrol  in each  subject  only  twice.  \n \n Article  7 \nProvision  of educational  activities  and their  organization  \n(1) The student’s  study  activities  consist  mainly  of independent  work  assigned  and inspected  by \nteachers.  \n (2) Instruction  is mainly  organized  in the form  of lectures,  seminars,  studios,  projects,  various  types  \nof training  courses,  labs,  guided  consultations,  professional  practice  and excursions.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (3) Students  can re-enrol  for a second  time  in subjects  that they  have  not successfully  completed.  \n The dean  may,  in justified  cases,  upon  a student’s  request  authorize  a re-enrol  in a subject  that \nhas been  successfully  completed.   In this case,  the grade  for the first enrolment  in the subject  is \nchanged  to F. \n (4) A re-enrol  in a subject  also means  an enrolment  in the same  subject  in another  language  or within  \nanother  study  programme,  as well as enrolment  in a subject  that has been  defined  by the study  \nplan  as an equivalent  or substitute  for this subject.  \n (5) A student  may  enrol  in each  subject  only  twice.  \n \n Article  7 \nProvision  of educational  activities  and their  organization  \n(1) The student’s  study  activities  consist  mainly  of independent  work  assigned  and inspected  by \nteachers.  \n (2) Instruction  is mainly  organized  in the form  of lectures,  seminars,  studios,  projects,  various  types  \nof training  courses,  labs,  guided  consultations,  professional  practice  and excursions.  \n\n    ---------------------------------------------------------------\n    Query: Can students enrol in a subject more than twice?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 0.8333333333333333,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0014025,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.0217676162719727,
+        "generation_time_sec": 1.3501195907592773,
+        "rag_total_time_sec": 3.37188720703125,
+        "evaluation_time_sec": 3.43007493019104,
+        "total_time_sec": 7.437438726425171
+    },
+    "token_estimates": {
+        "input_tokens": 537,
+        "output_tokens": 0,
+        "total_tokens": 537,
+        "cost_usd": 0.002685,
+        "cost_czk": 0.063098
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "id": 29,
+    "question": "Is the dissertation thesis required to be written in Czech only?",
+    "answer": "No",
+    "article": "Article 28(5)",
+    "out_of_scope": false,
+    "answer_generated": "No, the dissertation thesis does not have to be written in Czech only. According to Document 1, Para 5, applicants can submit their dissertation thesis in Czech, Slovak, or English. Additionally, with the approval of the chair of ORO, they can submit it in another world language.",
+    "context": "Document 1: A more  detailed  specification  of the \nsubject  is possible  based  on an agreement  of the supervisor  and the applicant.  \n (3) The title of the dissertation  thesis,  including  its content,  will be set by the end of the study  unit at \nthe latest,  based  on the presented  study  and the discussion  about  the subject  of the dissertation  \nthesis  pursuant  to Article  27, Para  10 hereof.  \n (4) A set of publications  or accepted  manuscripts,  supplemented  with  an integrating  text,  can also be \naccepted  as dissertation  thesis.  \n (5) Dissertation  theses  are drawn  in Czech,  Slovak  or English.   Upon  approval  of the chair  of ORO,  \napplicants  can submit  dissertation  theses  in another  world  language.   Other  formal  requirements  \nfor dissertation  theses  will be stipulated  by a binding  directive  of the dean  of the faculty,  where  \nthe study  programme  is implemented.   If a thesis  does  not comply  with  these  formal  \nrequirements,  the S&R Department  may  not accept  it for further  proceedings.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: A more  detailed  specification  of the \nsubject  is possible  based  on an agreement  of the supervisor  and the applicant.  \n (3) The title of the dissertation  thesis,  including  its content,  will be set by the end of the study  unit at \nthe latest,  based  on the presented  study  and the discussion  about  the subject  of the dissertation  \nthesis  pursuant  to Article  27, Para  10 hereof.  \n (4) A set of publications  or accepted  manuscripts,  supplemented  with  an integrating  text,  can also be \naccepted  as dissertation  thesis.  \n (5) Dissertation  theses  are drawn  in Czech,  Slovak  or English.   Upon  approval  of the chair  of ORO,  \napplicants  can submit  dissertation  theses  in another  world  language.   Other  formal  requirements  \nfor dissertation  theses  will be stipulated  by a binding  directive  of the dean  of the faculty,  where  \nthe study  programme  is implemented.   If a thesis  does  not comply  with  these  formal  \nrequirements,  the S&R Department  may  not accept  it for further  proceedings.  \n    ---------------------------------------------------------------\n    Query: Is the dissertation thesis required to be written in Czech only?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.9483773708343506,
+        "generation_time_sec": 3.94109845161438,
+        "rag_total_time_sec": 5.8894758224487305,
+        "evaluation_time_sec": 5.11347508430481,
+        "total_time_sec": 11.324694633483887
+    },
+    "token_estimates": {
+        "input_tokens": 532,
+        "output_tokens": 0,
+        "total_tokens": 532,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

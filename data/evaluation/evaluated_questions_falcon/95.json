@@ -1,0 +1,42 @@
+{
+    "id": 95,
+    "question": "Can I get an individual study plan if I represent my country in sports?",
+    "answer": "Yes, you can request an individual study plan (ISP) if you represent your country in sports.",
+    "article": "Article 1(7)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, you can get an individual study plan if you represent your country in sports. According to Document 1, students who submit a confirmation stating they represent the Czech Republic in a sport discipline are entitled to adjustments in the course of their studies, allowing them to participate in representation and do the necessary practice.",
+    "context": "Document 1: 1 It applies  to students  with  visual  impairments,  hearing  impairments,  with  mobility  impairments,  with  specific  learning  disabilities,  with  \nmental  disorders  (including  autistic  spectrum  disorders  and impaired  communication  abilities)  or chronic  somatic  diseases.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n2 (6) In connection  with  pregnancy,  childbirth  and parenting,  students  and persons  who  have  accepted  \na child  to guardianship  replacing  parental  care  following  a decisions  taken  by the respective  \nauthority  pursuant  to the Civil Code  or legal  regulations  governing  the state  social  welfare  system2 \n(hereinafter  as “student -parents”)  are entitled  to special  adjustments  of the interruption  of \nstudies,  extending  the deadlines  to fulfil  their  study  obligations  and deducting  the recognized  \nperiod  of parenthood  from  the total  period  of study.   These  adjustments  are governed  by the \n“Methodical  Guideline  on Support  to Student -parents”.  \n (7) Students  who  submit  to the faculty,  in case  of faculty  programmes,  or to CTU,  in case  of non-\nfaculty  programmes,  a confirmation  stating  that they  represent  the Czech  Republic  in a sport  \ndiscipline  issued  by an organization  representing  this sport  discipline  in the Czech  Republic,  are \nconsequently  entitled  to adjustments  of the course  of their  studies  that will allow  them  to \nparticipate  in representation  and do the necessary  practice.  \n \n   Part  II \nINTRODUCTORY  PROVISIONS  \nArticle  2 \nOrganization  of the academic  year  \n(1) Pursuant  to Section  52, Para  2 of the Act, the Rector  sets the beginning  of the academic  year  and,  \nfollowing  a discussion  in the Rector’s  Collegium,  announces  the mandatory  timetable  of the \nacademic  year  at CTU.   \n (2) The academic  year  is divided  into winter  and summer  semesters  and the period  of vacations.   \n (3) The timetable  of the academic  year  at CTU primarily  defines  the instruction  period,  the \nexamination  period  and period  of vacations  and of other  academic  activities.   \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: 1 It applies  to students  with  visual  impairments,  hearing  impairments,  with  mobility  impairments,  with  specific  learning  disabilities,  with  \nmental  disorders  (including  autistic  spectrum  disorders  and impaired  communication  abilities)  or chronic  somatic  diseases.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n2 (6) In connection  with  pregnancy,  childbirth  and parenting,  students  and persons  who  have  accepted  \na child  to guardianship  replacing  parental  care  following  a decisions  taken  by the respective  \nauthority  pursuant  to the Civil Code  or legal  regulations  governing  the state  social  welfare  system2 \n(hereinafter  as “student -parents”)  are entitled  to special  adjustments  of the interruption  of \nstudies,  extending  the deadlines  to fulfil  their  study  obligations  and deducting  the recognized  \nperiod  of parenthood  from  the total  period  of study.   These  adjustments  are governed  by the \n“Methodical  Guideline  on Support  to Student -parents”.  \n (7) Students  who  submit  to the faculty,  in case  of faculty  programmes,  or to CTU,  in case  of non-\nfaculty  programmes,  a confirmation  stating  that they  represent  the Czech  Republic  in a sport  \ndiscipline  issued  by an organization  representing  this sport  discipline  in the Czech  Republic,  are \nconsequently  entitled  to adjustments  of the course  of their  studies  that will allow  them  to \nparticipate  in representation  and do the necessary  practice.  \n \n   Part  II \nINTRODUCTORY  PROVISIONS  \nArticle  2 \nOrganization  of the academic  year  \n(1) Pursuant  to Section  52, Para  2 of the Act, the Rector  sets the beginning  of the academic  year  and,  \nfollowing  a discussion  in the Rector’s  Collegium,  announces  the mandatory  timetable  of the \nacademic  year  at CTU.   \n (2) The academic  year  is divided  into winter  and summer  semesters  and the period  of vacations.   \n (3) The timetable  of the academic  year  at CTU primarily  defines  the instruction  period,  the \nexamination  period  and period  of vacations  and of other  academic  activities.   \n\n    ---------------------------------------------------------------\n    Query: Can I get an individual study plan if I represent my country in sports?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 0.8333333333333333,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.9861390590667725,
+        "generation_time_sec": 4.447856903076172,
+        "rag_total_time_sec": 6.433995962142944,
+        "evaluation_time_sec": 5.756621360778809,
+        "total_time_sec": 12.587819814682007
+    },
+    "token_estimates": {
+        "input_tokens": 828,
+        "output_tokens": 23,
+        "total_tokens": 851,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

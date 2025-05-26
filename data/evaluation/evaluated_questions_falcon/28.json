@@ -1,0 +1,42 @@
+{
+    "id": 28,
+    "question": "Can students interrupt their studies without the dean's permission?",
+    "answer": "No",
+    "article": "Article 13(5)",
+    "out_of_scope": false,
+    "answer_generated": "No, students cannot interrupt their studies without the dean's permission. According to Document 1, the dean may interrupt a student's studies under certain conditions, but there is no mention of students having the ability to interrupt their studies independently.",
+    "context": "Document 1: The dean  may,  upon  their  own  motion,  interrupt  a \nstudent's  studies  if it is necessary  in order  to avert  an imminent  harm  to the student,  provided  it \ndid not originate  in connection  with  the previous  fulfilment  of study  requirements.   In this case,  \nthe studies  will not be interrupted  provided  the student  expresses  their  disagreement  in writing  \nwithin  10 days  of receiving  the written  notice  of the possible  interr uption  of the studies.   The \ndean’s  decision  to interrupt  the studies  must  be made  in writing  in accordance  with  Section  68 of \nthe Act and the student  may  appeal  against  the decision.   The dean  will always  grant  the request  \nto interrupt  the studies  if the relevant  period  affected  by the request  is part of a recognized  \nperiod  of parenthood.  \n (4) The doctoral  student  is obliged  to show  up once  a year  for enrolment  in the next  study  unit on a \ndefined  date.   The enrolment  is conditioned  on the submission  of a report  of activities  and its \napproval  by the supervisor,  the head  of the training  centre  and the chair  of ORO.   If the student  \nfails to show  up on the defined  date  and does  not submit  an apology  in writing  within  five days  of \nthe date,  it will be considered  as a failure to fulfil  the study  requirements  of the study  programme  \nunder  these  Rules  and the student's  studies  will be terminated  pursuant  to Section  56, Para  1 (b) \nof the Act and Article  34, Para  7 (b) hereof.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The dean  may,  upon  their  own  motion,  interrupt  a \nstudent's  studies  if it is necessary  in order  to avert  an imminent  harm  to the student,  provided  it \ndid not originate  in connection  with  the previous  fulfilment  of study  requirements.   In this case,  \nthe studies  will not be interrupted  provided  the student  expresses  their  disagreement  in writing  \nwithin  10 days  of receiving  the written  notice  of the possible  interr uption  of the studies.   The \ndean’s  decision  to interrupt  the studies  must  be made  in writing  in accordance  with  Section  68 of \nthe Act and the student  may  appeal  against  the decision.   The dean  will always  grant  the request  \nto interrupt  the studies  if the relevant  period  affected  by the request  is part of a recognized  \nperiod  of parenthood.  \n (4) The doctoral  student  is obliged  to show  up once  a year  for enrolment  in the next  study  unit on a \ndefined  date.   The enrolment  is conditioned  on the submission  of a report  of activities  and its \napproval  by the supervisor,  the head  of the training  centre  and the chair  of ORO.   If the student  \nfails to show  up on the defined  date  and does  not submit  an apology  in writing  within  five days  of \nthe date,  it will be considered  as a failure to fulfil  the study  requirements  of the study  programme  \nunder  these  Rules  and the student's  studies  will be terminated  pursuant  to Section  56, Para  1 (b) \nof the Act and Article  34, Para  7 (b) hereof.  \n    ---------------------------------------------------------------\n    Query: Can students interrupt their studies without the dean's permission?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.3333333333333333,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.8443431854248047,
+        "generation_time_sec": 3.7881674766540527,
+        "rag_total_time_sec": 5.632510662078857,
+        "evaluation_time_sec": 4.40256142616272,
+        "total_time_sec": 10.397586345672607
+    },
+    "token_estimates": {
+        "input_tokens": 652,
+        "output_tokens": 0,
+        "total_tokens": 652,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

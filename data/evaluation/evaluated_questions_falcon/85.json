@@ -1,0 +1,42 @@
+{
+    "id": 85,
+    "question": "Does the university offer employment to students?",
+    "answer": "The document does not mention student employment opportunities or career services.",
+    "article": "Not specified in the document.",
+    "out_of_scope": true,
+    "answer_generated": "No, the provided documents do not mention the university offering employment to students. They focus on study programs, enrollment, and state final examinations.",
+    "context": "Document 1: The standard  period  of study  is determined  according  to the \nprogramme  that the student  enrols  in at the receiving  faculty  or university  institute  at CTU.  \n (4) On the day of the enrolment  the student  becomes  student  of the new  study  programme.   The day \npreceding  the day of the enrolment  in the new  studies  is considered  the day of the termination  of \nthe original  studies.  \n (5) For the purposes  of monitoring  of studies,  after  the enrolment  in the recei ving faculty  the \ntransferring  student  is considered  student  in the 1st year  of studies.   Monitoring  of studies  at the \nreceiving  constituent  part of CTU is regulated  by Article  14, Para  4 hereof.  \n \n Article  16 \nState  final  examinations  \n(1) Studies  in bachelor  and master  study  programmes  are completed  by state  final  examinations  \ntaken  before  an examination  committee.   The course  of the examination  and the announcement  \nof the results  of the state  final  examination  are public.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The standard  period  of study  is determined  according  to the \nprogramme  that the student  enrols  in at the receiving  faculty  or university  institute  at CTU.  \n (4) On the day of the enrolment  the student  becomes  student  of the new  study  programme.   The day \npreceding  the day of the enrolment  in the new  studies  is considered  the day of the termination  of \nthe original  studies.  \n (5) For the purposes  of monitoring  of studies,  after  the enrolment  in the recei ving faculty  the \ntransferring  student  is considered  student  in the 1st year  of studies.   Monitoring  of studies  at the \nreceiving  constituent  part of CTU is regulated  by Article  14, Para  4 hereof.  \n \n Article  16 \nState  final  examinations  \n(1) Studies  in bachelor  and master  study  programmes  are completed  by state  final  examinations  \ntaken  before  an examination  committee.   The course  of the examination  and the announcement  \nof the results  of the state  final  examination  are public.  \n\n    ---------------------------------------------------------------\n    Query: Does the university offer employment to students?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.0,
+        "Groundedness": 0.5,
+        "Answer Relevance": 0.6666666666666666
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.8517110347747803,
+        "generation_time_sec": 2.555927276611328,
+        "rag_total_time_sec": 4.407638311386108,
+        "evaluation_time_sec": 3.22070050239563,
+        "total_time_sec": 8.002946615219116
+    },
+    "token_estimates": {
+        "input_tokens": 519,
+        "output_tokens": 20,
+        "total_tokens": 539,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

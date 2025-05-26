@@ -1,0 +1,42 @@
+{
+    "id": 26,
+    "question": "Is the overall result of the state final examination evaluated as 'Pass' or 'Fail'?",
+    "answer": "No",
+    "article": "Article 18(1)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, the overall result of the state final examination is evaluated as 'Pass' or 'Fail' (Document 1).",
+    "context": "Document 1: The overall  evaluat ion of SDZ is on a scale:  “pass  with  \ndistinction”,  “pass”  or “fail”.  \n (7) The SDZ examination  committee  takes  a decision  by vote  in the closed  session  in the presence  of \nat least  two-thirds  of its members.   The examination  committee  first votes  between  “pass”  and \n“fail”.   In order  for the result  to be assessed  as “pass”,  an absolute  majority  of the members  \npresent  must  vote  in favour  of this option,  otherwise  the result  is assessed  as “fail”.   In case  the \nresult  is assessed  as “fail”,  the committee  decides  on a statement  that justifies  their  decision.   In \ncase  the result  is “pass”,  the examination  committee  takes  a further  vote  to decide  between  “pass  \nwith  distinction”  and “pass”.   In order  for the result  to be assessed  as “pass  with  distinction”,  an \nabsolute  majority  of the members  present  must  vote  in favour  of this option,  otherwise  the result  \nis assessed  as “pass”.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The overall  evaluat ion of SDZ is on a scale:  “pass  with  \ndistinction”,  “pass”  or “fail”.  \n (7) The SDZ examination  committee  takes  a decision  by vote  in the closed  session  in the presence  of \nat least  two-thirds  of its members.   The examination  committee  first votes  between  “pass”  and \n“fail”.   In order  for the result  to be assessed  as “pass”,  an absolute  majority  of the members  \npresent  must  vote  in favour  of this option,  otherwise  the result  is assessed  as “fail”.   In case  the \nresult  is assessed  as “fail”,  the committee  decides  on a statement  that justifies  their  decision.   In \ncase  the result  is “pass”,  the examination  committee  takes  a further  vote  to decide  between  “pass  \nwith  distinction”  and “pass”.   In order  for the result  to be assessed  as “pass  with  distinction”,  an \nabsolute  majority  of the members  present  must  vote  in favour  of this option,  otherwise  the result  \nis assessed  as “pass”.  \n\n    ---------------------------------------------------------------\n    Query: Is the overall result of the state final examination evaluated as 'Pass' or 'Fail'?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 0.6666666666666666,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 8.759999999999999e-05,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.4709985256195068,
+        "generation_time_sec": 0.9748671054840088,
+        "rag_total_time_sec": 2.4458656311035156,
+        "evaluation_time_sec": 5.534898996353149,
+        "total_time_sec": 8.330925941467285
+    },
+    "token_estimates": {
+        "input_tokens": 522,
+        "output_tokens": 0,
+        "total_tokens": 522,
+        "cost_usd": 3.1e-05,
+        "cost_czk": 0.000736
+    }
+}

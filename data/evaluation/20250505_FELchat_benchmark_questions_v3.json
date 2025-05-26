@@ -1,0 +1,702 @@
+[
+    {
+        "id": 1,
+        "question": "Are the Study and Examination Rules for Students at CTU issued pursuant to Section 17, Para 1 (g) of Act 111/1998 Coll.?",
+        "answer": "Yes",
+        "article": "Article 1(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 2,
+        "question": "Do the Study and Examination Rules apply to students in bachelor, master, and doctoral study programmes?",
+        "answer": "Yes",
+        "article": "Article 1(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 3,
+        "question": "Are students with special needs entitled to adjustments in study conditions?",
+        "answer": "Yes",
+        "article": "Article 1(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 4,
+        "question": "Is the academic year at CTU divided into winter and summer semesters?",
+        "answer": "Yes",
+        "article": "Article 2(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 5,
+        "question": "Does CTU implement bachelor, master, and doctoral study programmes?",
+        "answer": "Yes",
+        "article": "Article 3(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 6,
+        "question": "Is the maximum period of study for doctoral programmes 8 years?",
+        "answer": "Yes",
+        "article": "Article 3(8)",
+        "out_of_scope": false
+    },
+    {
+        "id": 7,
+        "question": "Can students re-enrol in a subject they have already completed?",
+        "answer": "Yes",
+        "article": "Article 6(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 8,
+        "question": "Is the system of credits at CTU compatible with the European Credit Transfer and Accumulation System (ECTS)?",
+        "answer": "Yes",
+        "article": "Article 5(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 9,
+        "question": "Are students required to present an ID during the verification of study results?",
+        "answer": "Yes",
+        "article": "Article 8(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 10,
+        "question": "Can students retake an examination if they receive an F grade?",
+        "answer": "Yes",
+        "article": "Article 10(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 11,
+        "question": "Is the overall result of the state final examination evaluated on a scale from A to F?",
+        "answer": "Yes",
+        "article": "Article 11(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 12,
+        "question": "Are graduates of bachelor study programmes awarded the academic degree 'Bachelor'?",
+        "answer": "Yes",
+        "article": "Article 34(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 13,
+        "question": "Can students interrupt their studies during the recognized period of parenthood?",
+        "answer": "Yes",
+        "article": "Article 13(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 14,
+        "question": "Is the dissertation thesis required to include original results of scientific or creative work?",
+        "answer": "Yes",
+        "article": "Article 28(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 15,
+        "question": "Are students required to submit an application for the state doctoral examination?",
+        "answer": "Yes",
+        "article": "Article 29(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 16,
+        "question": "Can doctoral students request recognition of examinations taken during previous studies?",
+        "answer": "Yes",
+        "article": "Article 31(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 17,
+        "question": "Is the student ID issued by the CTU Computing and Information Centre?",
+        "answer": "Yes",
+        "article": "Article 32(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 18,
+        "question": "Are students required to return their student ID after the completion of studies?",
+        "answer": "Yes",
+        "article": "Article 34(10)",
+        "out_of_scope": false
+    },
+    {
+        "id": 19,
+        "question": "Are bachelor, master, and dissertation theses published in the CTU Digital Library?",
+        "answer": "Yes",
+        "article": "Article 35(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 20,
+        "question": "Can the dean grant exceptions to the maximum period of study?",
+        "answer": "Yes",
+        "article": "Article 3(9)",
+        "out_of_scope": false
+    },
+    {
+        "id": 21,
+        "question": "Do the Study and Examination Rules apply to non-faculty programmes?",
+        "answer": "No",
+        "article": "Article 1(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 22,
+        "question": "Is the maximum period of study for bachelor programmes 10 years?",
+        "answer": "No",
+        "article": "Article 3(8)",
+        "out_of_scope": false
+    },
+    {
+        "id": 23,
+        "question": "Can students enrol in a subject more than twice?",
+        "answer": "No",
+        "article": "Article 6(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 24,
+        "question": "Is the award of an assessment optional for taking an examination?",
+        "answer": "No",
+        "article": "Article 6(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 25,
+        "question": "Can students retake an examination more than twice?",
+        "answer": "No",
+        "article": "Article 10(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 26,
+        "question": "Is the overall result of the state final examination evaluated as 'Pass' or 'Fail'?",
+        "answer": "No",
+        "article": "Article 18(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 27,
+        "question": "Are graduates of master study programmes awarded the academic degree 'Doctor'?",
+        "answer": "No",
+        "article": "Article 34(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 28,
+        "question": "Can students interrupt their studies without the dean's permission?",
+        "answer": "No",
+        "article": "Article 13(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 29,
+        "question": "Is the dissertation thesis required to be written in Czech only?",
+        "answer": "No",
+        "article": "Article 28(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 30,
+        "question": "Can students take the state doctoral examination without completing the study unit?",
+        "answer": "No",
+        "article": "Article 29(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 31,
+        "question": "Can students request recognition of a whole study unit?",
+        "answer": "No",
+        "article": "Article 31(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 32,
+        "question": "Is the student ID transferable to another student?",
+        "answer": "No",
+        "article": "Article 32(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 33,
+        "question": "Are students allowed to keep their student ID after the completion of studies?",
+        "answer": "No",
+        "article": "Article 34(10)",
+        "out_of_scope": false
+    },
+    {
+        "id": 34,
+        "question": "Are bachelor, master, and dissertation theses published only in print?",
+        "answer": "No",
+        "article": "Article 35(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 35,
+        "question": "Can the dean extend the maximum period of study indefinitely?",
+        "answer": "No",
+        "article": "Article 3(9)",
+        "out_of_scope": false
+    },
+    {
+        "id": 36,
+        "question": "Are students with special needs entitled to adjustments in entrance examinations?",
+        "answer": "Yes",
+        "article": "Article 1(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 37,
+        "question": "Is the academic year at CTU divided into three semesters?",
+        "answer": "No",
+        "article": "Article 2(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 38,
+        "question": "Can students enrol in subjects from another study programme without restrictions?",
+        "answer": "No",
+        "article": "Article 4(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 39,
+        "question": "Is the award of an assessment required for taking an examination?",
+        "answer": "Yes",
+        "article": "Article 6(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 40,
+        "question": "Can students retake an examination if they receive a grade other than F?",
+        "answer": "No",
+        "article": "Article 10(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 41,
+        "question": "Is the overall result of the state final examination evaluated as 'Pass with Distinction' or 'Pass'?",
+        "answer": "Yes",
+        "article": "Article 18(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 42,
+        "question": "Are graduates of doctoral study programmes awarded the academic degree 'Ph.D.'?",
+        "answer": "Yes",
+        "article": "Article 34(6)",
+        "out_of_scope": false
+    },
+    {
+        "id": 43,
+        "question": "Can students interrupt their studies during the examination period without serious reasons?",
+        "answer": "No",
+        "article": "Article 13(6)",
+        "out_of_scope": false
+    },
+    {
+        "id": 44,
+        "question": "Is the dissertation thesis required to be written in English only?",
+        "answer": "No",
+        "article": "Article 28(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 45,
+        "question": "Can students take the state doctoral examination without submitting an application?",
+        "answer": "No",
+        "article": "Article 29(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 46,
+        "question": "Can students request recognition of the state doctoral examination?",
+        "answer": "No",
+        "article": "Article 31(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 47,
+        "question": "Is the student ID issued by the faculty?",
+        "answer": "No",
+        "article": "Article 32(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 48,
+        "question": "Are students allowed to keep their student ID if they withdraw from studies?",
+        "answer": "No",
+        "article": "Article 34(10)",
+        "out_of_scope": false
+    },
+    {
+        "id": 49,
+        "question": "Are bachelor, master, and dissertation theses published only after the presentation and defence?",
+        "answer": "Yes",
+        "article": "Article 35(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 50,
+        "question": "Can the dean extend the maximum period of study beyond 8 months?",
+        "answer": "No",
+        "article": "Article 3(9)",
+        "out_of_scope": false
+    },
+    {
+        "id": 51,
+        "question": "What is the maximum period of study for doctoral programmes?",
+        "answer": "The maximum period of study for doctoral programmes is 8 years.",
+        "article": "Article 3(8)",
+        "out_of_scope": false
+    },
+    {
+        "id": 52,
+        "question": "What is the minimum period of interruption of studies?",
+        "answer": "The minimum period of interruption of studies is one semester.",
+        "article": "Article 13(6)",
+        "out_of_scope": false
+    },
+    {
+        "id": 53,
+        "question": "What is the purpose of the state doctoral examination?",
+        "answer": "The purpose of the state doctoral examination is to verify the depth and quality of the doctoral student’s knowledge and their ability to acquire and use new knowledge creatively.",
+        "article": "Article 29(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 54,
+        "question": "What is the role of the supervisor in doctoral study programmes?",
+        "answer": "The supervisor is the guarantor of the specialization programme and the dissertation thesis, and they guide the doctoral student in their studies.",
+        "article": "Article 23(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 55,
+        "question": "What is the standard period of study for doctoral programmes?",
+        "answer": "The standard period of study for doctoral programmes is minimum three and maximum four years.",
+        "article": "Article 19(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 56,
+        "question": "What is the purpose of the Study and Examination Rules?",
+        "answer": "The Study and Examination Rules provide guidelines for study in bachelor, master, and doctoral study programmes at CTU.",
+        "article": "Article 1(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 57,
+        "question": "What is the role of the dean in the interruption of studies?",
+        "answer": "The dean grants permission to interrupt studies based on a student's application and sets the conditions for the interruption.",
+        "article": "Article 13(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 58,
+        "question": "What is the purpose of the state final examination?",
+        "answer": "The state final examination verifies the student's knowledge and ability to apply it creatively, and it is a requirement for completing bachelor and master study programmes.",
+        "article": "Article 16(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 59,
+        "question": "What is the role of the CTU Digital Library?",
+        "answer": "The CTU Digital Library publishes bachelor, master, and dissertation theses on a non-profit basis, including supervisors' and reviewers' opinions.",
+        "article": "Article 35(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 60,
+        "question": "What is the purpose of the student ID?",
+        "answer": "The student ID serves as a document proving the legal status of a student and is used for identification purposes.",
+        "article": "Article 32(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 61,
+        "question": "What is the role of the Specialization Committee in doctoral study programmes?",
+        "answer": "The Specialization Committee monitors and assesses ongoing studies, updates and develops the doctoral study programme, and initiates proposals for new programmes.",
+        "article": "Article 21(6)",
+        "out_of_scope": false
+    },
+    {
+        "id": 62,
+        "question": "What is the purpose of the matriculation ceremony?",
+        "answer": "The matriculation ceremony is organized by the faculty to officially enter students into the Students’ Register and includes the taking of the matriculation oath.",
+        "article": "Article 13(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 63,
+        "question": "What is the role of the Students’ Register?",
+        "answer": "The Students’ Register serves for the registration of students and for budgetary and statistical purposes.",
+        "article": "Article 33(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 64,
+        "question": "What is the purpose of the graduation ceremony?",
+        "answer": "The graduation ceremony is where graduates receive their university diploma and take the graduation oath.",
+        "article": "Article 34(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 65,
+        "question": "What is the role of the examination committee in the state final examination?",
+        "answer": "The examination committee evaluates the results of the state final examination and announces the overall result.",
+        "article": "Article 16(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 66,
+        "question": "What is the purpose of the CTU electronic information system?",
+        "answer": "The CTU electronic information system is used to record study results, assessments, and other academic activities.",
+        "article": "Article 8(6)",
+        "out_of_scope": false
+    },
+    {
+        "id": 67,
+        "question": "What is the role of the head of department in the verification of study results?",
+        "answer": "The head of department is responsible for the overall organization of examinations and the publication of rules.",
+        "article": "Article 10(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 68,
+        "question": "What is the purpose of the study plan?",
+        "answer": "The study plan sets the time and content sequence of subjects in the form of a recommended time plan for the studies.",
+        "article": "Article 4(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 69,
+        "question": "What is the role of the supervisor-specialist in doctoral study programmes?",
+        "answer": "The supervisor-specialist provides specific leadership for professional consultations that the supervisor cannot provide.",
+        "article": "Article 24(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 70,
+        "question": "What is the purpose of the weighted average study results?",
+        "answer": "The weighted average study results express a student’s average grade evaluation in a given section of the studies.",
+        "article": "Article 12(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 71,
+        "question": "What is the role of the dean in the recognition of examinations?",
+        "answer": "The dean decides on the recognition of examinations taken during previous studies upon the student's request.",
+        "article": "Article 31(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 72,
+        "question": "What is the purpose of the study unit in doctoral study programmes?",
+        "answer": "The study unit is a section of the studies where the doctoral student deepens their theoretical and expert knowledge related to their field of study.",
+        "article": "Article 27(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 73,
+        "question": "What is the role of the CTU Computing and Information Centre?",
+        "answer": "The CTU Computing and Information Centre issues student IDs and manages the CTU electronic information system.",
+        "article": "Article 32(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 74,
+        "question": "What is the purpose of the dissertation thesis?",
+        "answer": "The dissertation thesis is the result of a solution to a specific scientific or creative task and proves the doctoral student’s ability to work independently and creatively.",
+        "article": "Article 28(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 75,
+        "question": "What is the role of the examination committee in the state doctoral examination?",
+        "answer": "The examination committee evaluates the doctoral student’s knowledge and ability to apply it creatively during the state doctoral examination.",
+        "article": "Article 29(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 76,
+        "question": "What is the purpose of the study documentation?",
+        "answer": "The study documentation includes records of study results, assessments, and other academic activities, and it is used for monitoring and evaluation purposes.",
+        "article": "Article 32(1)",
+        "out_of_scope": false
+    },
+    {
+        "id": 77,
+        "question": "What is the role of the dean in the termination of studies?",
+        "answer": "The dean makes decisions regarding the termination of studies based on the student’s failure to meet the requirements of the study programme.",
+        "article": "Article 34(7)",
+        "out_of_scope": false
+    },
+    {
+        "id": 78,
+        "question": "What is the purpose of the graduation oath?",
+        "answer": "The graduation oath is taken by graduates during the graduation ceremony and signifies their commitment to their academic and professional responsibilities.",
+        "article": "Article 34(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 79,
+        "question": "What is the role of the CTU Academic Senate?",
+        "answer": "The CTU Academic Senate approves the Study and Examination Rules and any amendments to them.",
+        "article": "Article 37(2)",
+        "out_of_scope": false
+    },
+    {
+        "id": 80,
+        "question": "What is the purpose of the Methodical Guideline on Support to Students and Applicants with Special Needs?",
+        "answer": "The Methodical Guideline provides adjustments to study conditions or entrance examinations for students and applicants with special needs.",
+        "article": "Article 1(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 81,
+        "question": "Where can the dean get their lunch?",
+        "answer": "The document does not provide information about dining facilities or meal arrangements for the dean.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 82,
+        "question": "How many students can the university accept?",
+        "answer": "The document does not specify enrollment quotas or admission limits for students.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 83,
+        "question": "How many toilets does the university have?",
+        "answer": "The document does not mention facilities such as restrooms or campus infrastructure.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 84,
+        "question": "Can I utilize a CTU printer for free?",
+        "answer": "The document does not address access to printers or related student services.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 85,
+        "question": "Does the university offer employment to students?",
+        "answer": "The document does not mention student employment opportunities or career services.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 86,
+        "question": "How many times can I retake a failed exam?",
+        "answer": "A failed exam can be retaken twice. If the student receives an F grade in the first retake, they may take a second retake, provided the total number of second retakes across all subjects does not exceed double the standard study duration. No further retakes are allowed.",
+        "article": "Article 10(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 87,
+        "question": "Please define the standard period of study.",
+        "answer": "The standard period of study is a period of study set in the study programme in years or semesters, in which a student should be able to complete their studies with a standard study workload.",
+        "article": "Article 3(6)",
+        "out_of_scope": false
+    },
+    {
+        "id": 88,
+        "question": "What is the maximum period of study for the bachelor study programme?",
+        "answer": "The maximum period of study for the bachelor study programme is double the standard period of study - 6 years.",
+        "article": "Article 3(8)",
+        "out_of_scope": false
+    },
+    {
+        "id": 89,
+        "question": "What is the maximum period of study for the master study programme?",
+        "answer": "The maximum period of study for the master study programme is double the standard period of study - 4 years.",
+        "article": "Article 3(8)",
+        "out_of_scope": false
+    },
+    {
+        "id": 90,
+        "question": "For how long can I interrupt my studies?",
+        "answer": "You can apply for an interruption by submitting a written request to the dean, stating the reason and duration of the interruption.",
+        "article": "Article 13(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 91,
+        "question": "Can I apply my master's thesis written at a specific study programme to another study programme?",
+        "answer": "The Study and Examination Rules for Students at CTU do not explicitly mention this.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 92,
+        "question": "What is the dress code for the matriculation ceremony?",
+        "answer": "The Study and Examination Rules for Students at CTU do not explicitly mention a dress code for the matriculation ceremony.",
+        "article": "Not specified in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 93,
+        "question": "How many times can I fail a subject before getting expelled?",
+        "answer": "You can fail a subject twice (two enrollments) before being expelled.",
+        "article": "Article 6(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 94,
+        "question": "Can I fail my second attempt at a subject and not get expelled?",
+        "answer": "No, failing your second attempt at a subject leads to expulsion.",
+        "article": "Article 6(3)",
+        "out_of_scope": false
+    },
+    {
+        "id": 95,
+        "question": "Can I get an individual study plan if I represent my country in sports?",
+        "answer": "Yes, you can request an individual study plan (ISP) if you represent your country in sports.",
+        "article": "Article 1(7)",
+        "out_of_scope": false
+    },
+    {
+        "id": 96,
+        "question": "What happens if I fail a subject?",
+        "answer": "If you fail a subject, you can re-enrol in it once (total of two attempts). If you fail the second enrolment in an obligatory or elective subject, your studies will be terminated. Termination occurs under Section 56, Para 1 (b) of the Higher Education Act.",
+        "article": "Article 6(5)",
+        "out_of_scope": false
+    },
+    {
+        "id": 97,
+        "question": "Does it matter which country I represent in sports if I want the individual study plan?",
+        "answer": "No, the country you represent does not matter. As long as you provide official confirmation from a recognized national sports organization (as stated in Article 1(7)), CTU will consider adjustments to your study plan.",
+        "article": "Article 1(7)",
+        "out_of_scope": false
+    },
+    {
+        "id": 98,
+        "question": "Are the degrees attained at CTU internationally acceptable?",
+        "answer": "Yes, degrees from CTU are internationally recognized (not explicitely mentioned but ECTS is mentioned ... depends if the model uses its trained context).",
+        "article": "Not explicitly stated in the document.",
+        "out_of_scope": true
+    },
+    {
+        "id": 99,
+        "question": "What is the minimum amount of credits per semester in the bachelor programme?",
+        "answer": "Minimum credits per semester in CTU bachelor's programme are 15 credits for the first semester and 20 credits in the subsequent semesters.",
+        "article": "Article 14(4)",
+        "out_of_scope": false
+    },
+    {
+        "id": 100,
+        "question": "What is the minimum amount of credits per semester in the master's programme?",
+        "answer": "Minimum credits per semester in CTU master's programme is 20 credits per semester.",
+        "article": "Article 14(4)",
+        "out_of_scope": false
+    }
+]

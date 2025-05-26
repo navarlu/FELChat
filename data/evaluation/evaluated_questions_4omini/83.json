@@ -1,0 +1,42 @@
+{
+    "id": 83,
+    "question": "How many toilets does the university have?",
+    "answer": "The document does not mention facilities such as restrooms or campus infrastructure.",
+    "article": "Not specified in the document.",
+    "out_of_scope": true,
+    "answer_generated": "No, the document does not provide information about the number of toilets at the university.",
+    "context": "Document 1: It includes  the completion  of obligatory  specialization  subjects  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n23 pursuant  to Para  3 and 5 hereof,  language  preparation  completed  pursuant  to Para  2 and \nspecialist  activities  presented  in the form  of a written  study  and discussion  of the dissertat ion \nthesis  pursuant  to Para  6 and 7.  \n (2) Language  preparation  is demonstrated  by an examination  from  at least  one world  language  \n(usually  English)  or a certificate  of language  skills  recognized  by the relevant  language  \ndepartment.  \n (3) Obligatory  specialization  subjects  are semestrial  courses  and are explicitly  stated  in ISP.  There  are \nfour  to six such  courses , of which  at least  4 belong  to the set of subjects  in doctoral  study  \nprogrammes.   ISP may  also determine  the form  of completing  the subjects  (attending  lectures,  \nself-study  and consultations).   Each  obligatory  subject  is completed  by a subject  examination,  or, \nin case  of foreign  universities,  by its equivalent.  \n (4) The doctoral  student,  upon  agreement  with  the supervisor,  can attend  also other  optional  \nsubject s that they  do not always  have  to complete  by an examination.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: It includes  the completion  of obligatory  specialization  subjects  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n23 pursuant  to Para  3 and 5 hereof,  language  preparation  completed  pursuant  to Para  2 and \nspecialist  activities  presented  in the form  of a written  study  and discussion  of the dissertat ion \nthesis  pursuant  to Para  6 and 7.  \n (2) Language  preparation  is demonstrated  by an examination  from  at least  one world  language  \n(usually  English)  or a certificate  of language  skills  recognized  by the relevant  language  \ndepartment.  \n (3) Obligatory  specialization  subjects  are semestrial  courses  and are explicitly  stated  in ISP.  There  are \nfour  to six such  courses , of which  at least  4 belong  to the set of subjects  in doctoral  study  \nprogrammes.   ISP may  also determine  the form  of completing  the subjects  (attending  lectures,  \nself-study  and consultations).   Each  obligatory  subject  is completed  by a subject  examination,  or, \nin case  of foreign  universities,  by its equivalent.  \n (4) The doctoral  student,  upon  agreement  with  the supervisor,  can attend  also other  optional  \nsubject s that they  do not always  have  to complete  by an examination.  \n\n    ---------------------------------------------------------------\n    Query: How many toilets does the university have?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.0,
+        "Groundedness": 0.0,
+        "Answer Relevance": 0.0
+    },
+    "evaluation_cost": {
+        "amount": 8.85e-05,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.3731729984283447,
+        "generation_time_sec": 1.8485710620880127,
+        "rag_total_time_sec": 3.2217440605163574,
+        "evaluation_time_sec": 2.267235040664673,
+        "total_time_sec": 5.848503828048706
+    },
+    "token_estimates": {
+        "input_tokens": 595,
+        "output_tokens": 21,
+        "total_tokens": 616,
+        "cost_usd": 8.6e-05,
+        "cost_czk": 0.002023
+    }
+}

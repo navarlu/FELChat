@@ -1,0 +1,42 @@
+{
+    "id": 8,
+    "question": "Is the system of credits at CTU compatible with the European Credit Transfer and Accumulation System (ECTS)?",
+    "answer": "Yes",
+    "article": "Article 5(2)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, the system of credits at CTU is compatible with the European Credit Transfer and Accumulation System (ECTS) (Article 5)(2).",
+    "context": "Document 1: (5) Students  in master  study  programmes  cannot  enrol  in subjects  they  have  already  completed  in \nbachelor  study  programme,  or their  equivalents.   This does  not apply  to the optional  subject  \n“Physical  Education”.  \n \n Article  5 \nSystem  of credits  \n(1) A unified  system  of credits  is used  to quantify  the study  workload  of individual  subjects,  in which  \na) Every  subject  is awarded  a number  of credits  which  is a measure  of the relative  workload  \ndemanded  of students  in order  to successfully  complete  the given  subject,  \nb) One credit  represents  1/60  of the average  annual  student’s  work load  in a standard  period  of \nstudy  and with  the recommended  time  plan  of the studies,  \nc) The workload  in one semester  is usually  30 credits,  \nd) The workload  in an academic  year  is usually  60 credits,  \ne) The value  of credits  assigned  to one subject  is an integer,  \nf) Credits  obtained  within  a study  programme  are added  up; the cumulative  amount  of credits  \nis a means  of monitoring  the studies.  \n (2) The system  of credits  at CTU is compatible  with  the European  Credit  Transfer  and Accumulation  \nSystem  (hereinafter  as “ECTS”),  which  facilitates  student  mobility  under  European  educational  \nprogrammes.  \n \n Article  6  \nCompletion  of subjects  \n(1) Subjects  are completed  by the award  of assessment,  by the award  of graded  assessment,  by \npassing  an examination,  or by the award  of assessment  and passi ng an examination.   In case  of \nsubjects  for which  the study  plan  prescribes  both  the award  of assessment  and an examination,  \nthe award  of assessment  is a precondition  for taking  the examination  in the given  subject.  \n (2) A successful  completion  of a subject  is conditioned  on registration  for the subject  and \na) The award  of an assessment  in case  of subjects  completed  by the award  of assessment,  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n6 b) Passing  of an examination  evaluated  on the scale  A, B, C, D, or E in case  of subjects  \ncompleted  by an examination,  \nc) The award  of a graded  assessment  evaluated  on the scale  A, B, C, D, or E in case  of subjects  \ncompleted  by the award  of a graded  assessment.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (5) Students  in master  study  programmes  cannot  enrol  in subjects  they  have  already  completed  in \nbachelor  study  programme,  or their  equivalents.   This does  not apply  to the optional  subject  \n“Physical  Education”.  \n \n Article  5 \nSystem  of credits  \n(1) A unified  system  of credits  is used  to quantify  the study  workload  of individual  subjects,  in which  \na) Every  subject  is awarded  a number  of credits  which  is a measure  of the relative  workload  \ndemanded  of students  in order  to successfully  complete  the given  subject,  \nb) One credit  represents  1/60  of the average  annual  student’s  work load  in a standard  period  of \nstudy  and with  the recommended  time  plan  of the studies,  \nc) The workload  in one semester  is usually  30 credits,  \nd) The workload  in an academic  year  is usually  60 credits,  \ne) The value  of credits  assigned  to one subject  is an integer,  \nf) Credits  obtained  within  a study  programme  are added  up; the cumulative  amount  of credits  \nis a means  of monitoring  the studies.  \n (2) The system  of credits  at CTU is compatible  with  the European  Credit  Transfer  and Accumulation  \nSystem  (hereinafter  as “ECTS”),  which  facilitates  student  mobility  under  European  educational  \nprogrammes.  \n \n Article  6  \nCompletion  of subjects  \n(1) Subjects  are completed  by the award  of assessment,  by the award  of graded  assessment,  by \npassing  an examination,  or by the award  of assessment  and passi ng an examination.   In case  of \nsubjects  for which  the study  plan  prescribes  both  the award  of assessment  and an examination,  \nthe award  of assessment  is a precondition  for taking  the examination  in the given  subject.  \n (2) A successful  completion  of a subject  is conditioned  on registration  for the subject  and \na) The award  of an assessment  in case  of subjects  completed  by the award  of assessment,  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n6 b) Passing  of an examination  evaluated  on the scale  A, B, C, D, or E in case  of subjects  \ncompleted  by an examination,  \nc) The award  of a graded  assessment  evaluated  on the scale  A, B, C, D, or E in case  of subjects  \ncompleted  by the award  of a graded  assessment.  \n\n    ---------------------------------------------------------------\n    Query: Is the system of credits at CTU compatible with the European Credit Transfer and Accumulation System (ECTS)?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.002395,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.9123761653900146,
+        "generation_time_sec": 1.9077553749084473,
+        "rag_total_time_sec": 4.820131540298462,
+        "evaluation_time_sec": 3.7590842247009277,
+        "total_time_sec": 9.223198175430298
+    },
+    "token_estimates": {
+        "input_tokens": 871,
+        "output_tokens": 0,
+        "total_tokens": 871,
+        "cost_usd": 0.004355,
+        "cost_czk": 0.102343
+    }
+}

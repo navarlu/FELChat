@@ -1,0 +1,42 @@
+{
+    "id": 91,
+    "question": "Can I apply my master's thesis written at a specific study programme to another study programme?",
+    "answer": "The Study and Examination Rules for Students at CTU do not explicitly mention this.",
+    "article": "Not specified in the document.",
+    "out_of_scope": true,
+    "answer_generated": "No. The document does not mention the transfer of a master's thesis between study programmes.",
+    "context": "Document 1: (7) The monitoring  of the amount  of earned  credits  is carried  out for a semester,  an academic  year  or \na unit of study  in accordance  with  the study  plan  of the study  programme.   A student  who  fails to Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n14 earn  even  the minimum  amount  of credits  under  Para  4 to 6 will have  their  studies  terminated  for \nfailing  to meet  the requirements  pursuant  to Section  56, Para  1 (b) of the Act and Article  34, Para  \n7 (b).  The decision -making  in this matter  is governed  by Section  68 of the Act. \n \n Article  15 \nTransfers  between  CTU study  programmes  \n(1) After  they  have  fulfilled  the conditions  for progressing  to the following  academic  year  at their  \noriginal  faculty  or university  institute  at CTU,  students  can apply  for admission  to studies  pursuant  \nto Section  49, Para  3 of the Act to another  study  programme  implemented  at CTU;  the application  \nmust  be submitted  30 days  before  the start  of the given  semester  at the latest.  \n (2) The dean  decides  about  the admission  to studies,  also with  respect  to including  the student  in a \nparticular  section  of the studies  according  to the recommended  study  plan  of the study  in the \nstudy  programme;  the dean  may  recognize  completed  sections  of studies  or individual  subjects  \n(pursuant  to Article  13, Para  10 hereof ) and may  set further  conditions  (a bridging  examination,  \netc.)  \n (3) The study  period  starts  at the moment  of enrolment  in the original  study  programme,  from  which  \nthe student  is transferring.   The standard  period  of study  is determined  according  to the \nprogramme  that the student  enrols  in at the receiving  faculty  or university  institute  at CTU.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (7) The monitoring  of the amount  of earned  credits  is carried  out for a semester,  an academic  year  or \na unit of study  in accordance  with  the study  plan  of the study  programme.   A student  who  fails to Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n14 earn  even  the minimum  amount  of credits  under  Para  4 to 6 will have  their  studies  terminated  for \nfailing  to meet  the requirements  pursuant  to Section  56, Para  1 (b) of the Act and Article  34, Para  \n7 (b).  The decision -making  in this matter  is governed  by Section  68 of the Act. \n \n Article  15 \nTransfers  between  CTU study  programmes  \n(1) After  they  have  fulfilled  the conditions  for progressing  to the following  academic  year  at their  \noriginal  faculty  or university  institute  at CTU,  students  can apply  for admission  to studies  pursuant  \nto Section  49, Para  3 of the Act to another  study  programme  implemented  at CTU;  the application  \nmust  be submitted  30 days  before  the start  of the given  semester  at the latest.  \n (2) The dean  decides  about  the admission  to studies,  also with  respect  to including  the student  in a \nparticular  section  of the studies  according  to the recommended  study  plan  of the study  in the \nstudy  programme;  the dean  may  recognize  completed  sections  of studies  or individual  subjects  \n(pursuant  to Article  13, Para  10 hereof ) and may  set further  conditions  (a bridging  examination,  \netc.)  \n (3) The study  period  starts  at the moment  of enrolment  in the original  study  programme,  from  which  \nthe student  is transferring.   The standard  period  of study  is determined  according  to the \nprogramme  that the student  enrols  in at the receiving  faculty  or university  institute  at CTU.  \n\n    ---------------------------------------------------------------\n    Query: Can I apply my master's thesis written at a specific study programme to another study programme?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.3333333333333333,
+        "Groundedness": 0.0,
+        "Answer Relevance": 0.3333333333333333
+    },
+    "evaluation_cost": {
+        "amount": 0.0001152,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.2230911254882812,
+        "generation_time_sec": 0.9995734691619873,
+        "rag_total_time_sec": 3.2226645946502686,
+        "evaluation_time_sec": 5.185314655303955,
+        "total_time_sec": 8.776514768600464
+    },
+    "token_estimates": {
+        "input_tokens": 747,
+        "output_tokens": 20,
+        "total_tokens": 767,
+        "cost_usd": 9.3e-05,
+        "cost_czk": 0.002181
+    }
+}

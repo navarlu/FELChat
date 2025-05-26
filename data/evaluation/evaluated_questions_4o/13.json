@@ -1,0 +1,42 @@
+{
+    "id": 13,
+    "question": "Can students interrupt their studies during the recognized period of parenthood?",
+    "answer": "Yes",
+    "article": "Article 13(5)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, students can interrupt their studies during the recognized period of parenthood. The dean will always grant the request to interrupt the studies if the relevant period affected by the request is part of a recognized period of parenthood.",
+    "context": "Document 1: The dean  may,  upon  their  own  motion,  interrupt  a \nstudent's  studies  if it is necessary  in order  to avert  an imminent  harm  to the student,  provided  it \ndid not originate  in connection  with  the previous  fulfilment  of study  requirements.   In this case,  \nthe studies  will not be interrupted  provided  the student  expresses  their  disagreement  in writing  \nwithin  10 days  of receiving  the written  notice  of the possible  interr uption  of the studies.   The \ndean’s  decision  to interrupt  the studies  must  be made  in writing  in accordance  with  Section  68 of \nthe Act and the student  may  appeal  against  the decision.   The dean  will always  grant  the request  \nto interrupt  the studies  if the relevant  period  affected  by the request  is part of a recognized  \nperiod  of parenthood.  \n (4) The doctoral  student  is obliged  to show  up once  a year  for enrolment  in the next  study  unit on a \ndefined  date.   The enrolment  is conditioned  on the submission  of a report  of activities  and its \napproval  by the supervisor,  the head  of the training  centre  and the chair  of ORO.   If the student  \nfails to show  up on the defined  date  and does  not submit  an apology  in writing  within  five days  of \nthe date,  it will be considered  as a failure to fulfil  the study  requirements  of the study  programme  \nunder  these  Rules  and the student's  studies  will be terminated  pursuant  to Section  56, Para  1 (b) \nof the Act and Article  34, Para  7 (b) hereof.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The dean  may,  upon  their  own  motion,  interrupt  a \nstudent's  studies  if it is necessary  in order  to avert  an imminent  harm  to the student,  provided  it \ndid not originate  in connection  with  the previous  fulfilment  of study  requirements.   In this case,  \nthe studies  will not be interrupted  provided  the student  expresses  their  disagreement  in writing  \nwithin  10 days  of receiving  the written  notice  of the possible  interr uption  of the studies.   The \ndean’s  decision  to interrupt  the studies  must  be made  in writing  in accordance  with  Section  68 of \nthe Act and the student  may  appeal  against  the decision.   The dean  will always  grant  the request  \nto interrupt  the studies  if the relevant  period  affected  by the request  is part of a recognized  \nperiod  of parenthood.  \n (4) The doctoral  student  is obliged  to show  up once  a year  for enrolment  in the next  study  unit on a \ndefined  date.   The enrolment  is conditioned  on the submission  of a report  of activities  and its \napproval  by the supervisor,  the head  of the training  centre  and the chair  of ORO.   If the student  \nfails to show  up on the defined  date  and does  not submit  an apology  in writing  within  five days  of \nthe date,  it will be considered  as a failure to fulfil  the study  requirements  of the study  programme  \nunder  these  Rules  and the student's  studies  will be terminated  pursuant  to Section  56, Para  1 (b) \nof the Act and Article  34, Para  7 (b) hereof.  \n    ---------------------------------------------------------------\n    Query: Can students interrupt their studies during the recognized period of parenthood?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0019725,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.147382974624634,
+        "generation_time_sec": 1.9431192874908447,
+        "rag_total_time_sec": 4.0905022621154785,
+        "evaluation_time_sec": 2.689213275909424,
+        "total_time_sec": 7.386211395263672
+    },
+    "token_estimates": {
+        "input_tokens": 655,
+        "output_tokens": 0,
+        "total_tokens": 655,
+        "cost_usd": 0.003275,
+        "cost_czk": 0.076963
+    }
+}

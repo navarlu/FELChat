@@ -1,0 +1,42 @@
+{
+    "id": 63,
+    "question": "What is the role of the Students’ Register?",
+    "answer": "The Students’ Register serves for the registration of students and for budgetary and statistical purposes.",
+    "article": "Article 33(1)",
+    "out_of_scope": false,
+    "answer_generated": "The Students’ Register serves for the registration of students and for budgetary and statistical purposes (Article 33(1)).",
+    "context": "Document 1: (5) The statement  from  the CTU electronic  information  system  confirmed  by the faculty  serves  as the \nstatement  of studies.  \n \n Artic le 33 \nStudents’  Register  \n(1) Pursuant  to Section  88 of the Act, CTU keeps  a Students’  Register.   The Students’  Register  serves  \nfor registration  of students  and for budgetary  and statistical  purposes.  \n (2) The Students’  Register  contains  information  about  individual  students  required  by the Act and the \nMinistry.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n29 (3) The Students’  Register  is part of the CTU electronic  information  system.   It is kept  by the study  \ndepartments  and S&R Departments  in an operative  manner.   Only  authorized  employees  of CTU \ncan enter  information  into the Students’  Register  and to the study  documentation.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (5) The statement  from  the CTU electronic  information  system  confirmed  by the faculty  serves  as the \nstatement  of studies.  \n \n Artic le 33 \nStudents’  Register  \n(1) Pursuant  to Section  88 of the Act, CTU keeps  a Students’  Register.   The Students’  Register  serves  \nfor registration  of students  and for budgetary  and statistical  purposes.  \n (2) The Students’  Register  contains  information  about  individual  students  required  by the Act and the \nMinistry.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n29 (3) The Students’  Register  is part of the CTU electronic  information  system.   It is kept  by the study  \ndepartments  and S&R Departments  in an operative  manner.   Only  authorized  employees  of CTU \ncan enter  information  into the Students’  Register  and to the study  documentation.  \n\n    ---------------------------------------------------------------\n    Query: What is the role of the Students’ Register?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 7.754999999999999e-05,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 0.9351730346679688,
+        "generation_time_sec": 1.3823285102844238,
+        "rag_total_time_sec": 2.3175015449523926,
+        "evaluation_time_sec": 6.183727264404297,
+        "total_time_sec": 8.871073484420776
+    },
+    "token_estimates": {
+        "input_tokens": 493,
+        "output_tokens": 26,
+        "total_tokens": 519,
+        "cost_usd": 9.2e-05,
+        "cost_czk": 0.002162
+    }
+}

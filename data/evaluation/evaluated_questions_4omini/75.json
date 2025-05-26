@@ -1,0 +1,42 @@
+{
+    "id": 75,
+    "question": "What is the role of the examination committee in the state doctoral examination?",
+    "answer": "The examination committee evaluates the doctoral student’s knowledge and ability to apply it creatively during the state doctoral examination.",
+    "article": "Article 29(2)",
+    "out_of_scope": false,
+    "answer_generated": "The examination committee is appointed by the dean and is responsible for conducting the state doctoral examination (SDZ) (Article 29(2)).",
+    "context": "Document 1: Other  formal  requirements  \nfor dissertation  theses  will be stipulated  by a binding  directive  of the dean  of the faculty,  where  \nthe study  programme  is implemented.   If a thesis  does  not comply  with  these  formal  \nrequirements,  the S&R Department  may  not accept  it for further  proceedings.   In case  of any \ndoubts,  the matter  will be decided  by the dean.  \n \n Article  29 \nState  doctoral  examination  \n(1) The aim of the state  doctoral  examination  (hereinafter  as “SDZ”)  is to verify  the depth  and the \nquality  of the doctoral  student’s  knowledge,  their  ability  to acquire  new  knowle dge,  evaluate  it \nand use it creatively  in relation  to the chosen  field  of study  in the doctoral  study  programme  and \nthe topic  of the dissertation  thesis.   Prior  to taking  the state  doctoral  examination,  the student  \nmust  successfully  complete  the study  unit.   SDZ can be held  immediately  after  the discussion  on \nthe dissertation  thesis.  \n (2) SDZ is taken  before  an SDZ examination  committee,  which  is appointed  by the dean,  including  the \nchair  of the examination  committee , upon  a proposal  of the head  of the student’s  department  or \na member  of ORO  following  an approval  by ORO.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: Other  formal  requirements  \nfor dissertation  theses  will be stipulated  by a binding  directive  of the dean  of the faculty,  where  \nthe study  programme  is implemented.   If a thesis  does  not comply  with  these  formal  \nrequirements,  the S&R Department  may  not accept  it for further  proceedings.   In case  of any \ndoubts,  the matter  will be decided  by the dean.  \n \n Article  29 \nState  doctoral  examination  \n(1) The aim of the state  doctoral  examination  (hereinafter  as “SDZ”)  is to verify  the depth  and the \nquality  of the doctoral  student’s  knowledge,  their  ability  to acquire  new  knowle dge,  evaluate  it \nand use it creatively  in relation  to the chosen  field  of study  in the doctoral  study  programme  and \nthe topic  of the dissertation  thesis.   Prior  to taking  the state  doctoral  examination,  the student  \nmust  successfully  complete  the study  unit.   SDZ can be held  immediately  after  the discussion  on \nthe dissertation  thesis.  \n (2) SDZ is taken  before  an SDZ examination  committee,  which  is appointed  by the dean,  including  the \nchair  of the examination  committee , upon  a proposal  of the head  of the student’s  department  or \na member  of ORO  following  an approval  by ORO.  \n    ---------------------------------------------------------------\n    Query: What is the role of the examination committee in the state doctoral examination?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 9.75e-05,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.10905122756958,
+        "generation_time_sec": 1.1173899173736572,
+        "rag_total_time_sec": 3.2264411449432373,
+        "evaluation_time_sec": 3.0462486743927,
+        "total_time_sec": 6.63284707069397
+    },
+    "token_estimates": {
+        "input_tokens": 589,
+        "output_tokens": 35,
+        "total_tokens": 624,
+        "cost_usd": 0.000119,
+        "cost_czk": 0.002804
+    }
+}
