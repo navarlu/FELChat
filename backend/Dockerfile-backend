@@ -1,0 +1,26 @@
+# backend/Dockerfile-backend
+
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt .
+# It's good practice to copy wait-for-it.sh earlier if the command uses it
+COPY wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    netcat-openbsd \
+    gcc \
+    graphviz \
+    libgraphviz-dev \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy app code from the build context (which is ./backend) to /app in the image
+COPY . .
+# The CMD below is overridden by docker-compose.yml, but good for standalone image use
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
