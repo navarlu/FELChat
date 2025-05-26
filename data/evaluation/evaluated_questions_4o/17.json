@@ -1,0 +1,42 @@
+{
+    "id": 17,
+    "question": "Is the student ID issued by the CTU Computing and Information Centre?",
+    "answer": "Yes",
+    "article": "Article 32(3)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, the student ID is issued by the CTU Computing and Information Centre.",
+    "context": "Document 1: The student  ID serves  for identification  of a student  and is issued  as \na) A CTU student  ID, or \nb) A joint  CTU student  ID and the International  Student  Identity  Card  (ISIC).  \n (3) Student  IDs are issued  by the CTU Computing  and Information  Centre.   The information  necessary  \nfor the issuance  of the ID are acquired  from  the Students’  Register.   The requirements  for the ID \nand conditions  for its issuance  are set by the head  of the CTU Computing  and Information  Centre.  \n (4) The student  ID is non-transferrable.   The student  is obliged  to report  the loss,  damage  or \ndestruction  of the student  ID without  necessary  delay.   After  the completion  of the studies,  the \nholder  of the ID must  return  the student  ID to CTU without  delay.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The student  ID serves  for identification  of a student  and is issued  as \na) A CTU student  ID, or \nb) A joint  CTU student  ID and the International  Student  Identity  Card  (ISIC).  \n (3) Student  IDs are issued  by the CTU Computing  and Information  Centre.   The information  necessary  \nfor the issuance  of the ID are acquired  from  the Students’  Register.   The requirements  for the ID \nand conditions  for its issuance  are set by the head  of the CTU Computing  and Information  Centre.  \n (4) The student  ID is non-transferrable.   The student  is obliged  to report  the loss,  damage  or \ndestruction  of the student  ID without  necessary  delay.   After  the completion  of the studies,  the \nholder  of the ID must  return  the student  ID to CTU without  delay.  \n\n    ---------------------------------------------------------------\n    Query: Is the student ID issued by the CTU Computing and Information Centre?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0011925,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.3783211708068848,
+        "generation_time_sec": 1.3539600372314453,
+        "rag_total_time_sec": 2.73228120803833,
+        "evaluation_time_sec": 2.420548677444458,
+        "total_time_sec": 5.780912637710571
+    },
+    "token_estimates": {
+        "input_tokens": 467,
+        "output_tokens": 0,
+        "total_tokens": 467,
+        "cost_usd": 0.002335,
+        "cost_czk": 0.054872
+    }
+}

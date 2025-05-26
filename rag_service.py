@@ -1,22 +1,33 @@
 # rag_service.py
 
-from trulens.apps.app import instrument
-from trulens.core import TruSession
 
+import requests
+import re
+import time
 class RAGService:
     def __init__(self, index_manager):
         self.index_manager = index_manager
-        self.session = TruSession()
+        
         self.conversation_history = []
+        # self.server_url = "https://fe9b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
+        # self.server_url = "https://924b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
+        # self.server_url = "https://924b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
+        self.server_url = "https://ac9c-147-32-87-114.ngrok-free.app/chat"
 
-    @instrument
+
+
+
+
+    
     def retrieve(self, query: str) -> list:
         """
         Use the manager's (sentence-window) query engine for retrieval.
         """
+
         engine = self.index_manager.get_query_engine()
+
         print("[RAGService] docstore at retrieval time:")
-        print(self.index_manager.list_documents())
+
         results = engine.query(query)
 
         unique_email_ids = set()
@@ -29,7 +40,7 @@ class RAGService:
                 unique_texts.append(node.text)
         return unique_texts
 
-    @instrument
+    
     def generate_completion(self, query: str, context_docs: list[str]) -> str:
         """
         Whichever function you used to call OpenAI. For example:
@@ -40,14 +51,26 @@ class RAGService:
         # return that text
         return self.generate_answer(query, context_docs)
 
-    @instrument
+    
     def query(self, query: str):
-        """
-        The overall RAG pipeline: retrieval + generation
-        """
+        timings = {}
+
+        # Measure retrieval
+        t0 = time.time()
         docs = self.retrieve(query)
-        answer = self.generate_completion(query, docs)
-        return answer, docs
+        t1 = time.time()
+        timings["retrieval_time_sec"] = t1 - t0
+
+        # Measure answer generation
+        t2 = time.time()
+        answer, context, messages = self.generate_completion(query, docs)
+        t3 = time.time()
+        timings["generation_time_sec"] = t3 - t2
+
+        timings["rag_total_time_sec"] = t3 - t0
+
+        return answer, docs, context, messages, timings
+        
     
     def generate_answer(self, user_question, retrieved_documents, model_temperature=0.1, model_name="gpt-4o-mini"):
         """
@@ -62,14 +85,18 @@ class RAGService:
         
         # Revised system message instructing the LLM to simply report what was found.
         system_message = f"""
-    You are a factual assistant. Your task is to report exactly what data was found in the provided documents for the given query, and indicate where that information was located (for example, by document number or page number). 
+    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. 
 
     Important Guidelines:
     - Do not add any additional explanations or interpretations.
     - Only use the information explicitly provided in the documents.
-    - If multiple documents contain relevant information, list each separately.
     - If there is any ambiguity, simply state the data as found without making assumptions.
-    - Answer in Czech language.
+    - Answer in English language.
+    - Answer exclusively what user asked about and do not add any additional information.
+    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.
+    - Answer in a conversational tone.
+    - Keep the answer short and concise.
+    - Answer yes or no if the question is you can and then add short explanation.
     """
 
         prompt = f'''
@@ -90,90 +117,32 @@ class RAGService:
         # Add the current user message with the prompt
         messages.append({"role": "user", "content": prompt})
 
+
+
         import json
         print("Messages:\n" + json.dumps(messages, indent=4, ensure_ascii=False))
 
         try:
-            from openai import OpenAI as OpenAI2
-            client = OpenAI2()
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                temperature=model_temperature
-            )
-            return response.choices[0].message.content.strip()
+            answer = self.send_prompt(messages)
+            return answer, context, messages
         except Exception as e:
             return f"Error generating response: {str(e)}"
      
 
-    def generate_answer_ema(self, user_question, retrieved_documents, model_temperature=0.1, model_name="gpt-4o-mini"):
-        """
-        Generates an answer using OpenAI's API based on retrieved documents.
-        """
-        if not retrieved_documents:
-            return "No relevant documents found to answer the question."
+    def send_prompt(self,prompt):
+        response = requests.post(self.server_url, json={"prompt": prompt})
+        if response.status_code == 200:
+            full_response = response.json()["response"]
+            # Find all assistant responses
+            matches = re.findall(r"<\|assistant\|>\s*(.*?)(?=<\|user\|>|$)", full_response, re.DOTALL)
+            if matches:
+                return matches[-1].strip()  # Get the last assistant response
+            else:
+                return full_response.strip()
+        else:
+            return f"Chyba: {response.status_code} - {response.text}"
 
-        # Construct the context prompt using the retrieved documents.
-        context = "\n\n".join([f"Document {idx + 1}: {doc}" for idx, doc in enumerate(retrieved_documents)])
-        #print(context)
-        system_message = f"""
 
-    You are a helpful email assistant that answers customer inquiries based on provided documents.
-    From user you will recieve his question and context in related documents.
-
-    Important Guidelines:
-    - Always prioritize information from the most recent document. 
-    - If newer information conflicts with older documents, only use the latest (most recent) document.
-
-    Example:
-    If the customer asks "Do you offer delivery to Germany?" and the documents provided are:
-
-    Document 1 (newest):
-    "We no longer offer international shipping; delivery is available only within the Czech Republic."
-
-    Document 2 (older):
-    "We deliver to countries including Germany, Austria, and Slovakia."
-
-    Correct Response:
-    "Currently, we only offer delivery within the Czech Republic."
-
-    Incorrect Response:
-    "Yes, we deliver to Germany."
-
-    Now, compose a clear, concise, and polite email response to the customer's inquiry based strictly on the above guidelines.
-    """
-        prompt= f'''
-    ---------------------------------------------------------------
-    Context from retrieved documents (sorted from newest to oldest):
-
-    {context}
-    ---------------------------------------------------------------
-    Customer Question: {user_question}
-    ---------------------------------------------------------------
-    '''
-        messages = [{"role": "system", "content": system_message}]
-        
-        # Append previous conversation history if available
-        if self.conversation_history:
-            messages.extend(self.conversation_history)
-
-        # Add the current user message
-        messages.append({"role": "user", "content": prompt})
-
-        import json
-
-        print("Messages:\n" + json.dumps(messages, indent=4, ensure_ascii=False))
-
-        try:
-            from openai import OpenAI as OpenAI2
-            client = OpenAI2()
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                temperature=model_temperature
-            )
-            return response.choices[0].message.content.strip()
-        except Exception as e:
-            return f"Error generating response: {str(e)}"
     
+     
 

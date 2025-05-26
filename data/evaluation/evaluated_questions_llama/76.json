@@ -1,0 +1,42 @@
+{
+    "id": 76,
+    "question": "What is the purpose of the study documentation?",
+    "answer": "The study documentation includes records of study results, assessments, and other academic activities, and it is used for monitoring and evaluation purposes.",
+    "article": "Article 32(1)",
+    "out_of_scope": false,
+    "answer_generated": "The purpose of the study documentation is not explicitly stated in the provided documents. However, it is mentioned that the study documentation is governed by Section 57 of the Act, which suggests that it serves a specific purpose related to the study programme. \n\nPlease clarify or provide more context if you would like me to assist you further.",
+    "context": "Document 1: Later  requests  will not be granted.  \n (4) The supervisor  and the relevant  Specialization  Committee  will comment  on the request.  \n (5) The dean  will take  a decision  about  the recognition  of an examination  within  30 days.  \n \n Part  V \nCOMMON  PROVISIONS  \nArticle  32 \nStudy  documentation  \n(1) The study  documentation  in a study  programme  and documents  proving  the completion  of \nstud ies in a study  programme  are governed  by Section  57 of the Act. \n (2) Pursuant  to Section  57, Para  1 (a) of the Act, CTU issues  a student  ID, which  is a document  proving  \nthe legal  status  of student.   The student  ID serves  for identification  of a student  and is issued  as \na) A CTU student  ID, or \nb) A joint  CTU student  ID and the International  Student  Identity  Card  (ISIC).  \n (3) Student  IDs are issued  by the CTU Computing  and Information  Centre.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: Later  requests  will not be granted.  \n (4) The supervisor  and the relevant  Specialization  Committee  will comment  on the request.  \n (5) The dean  will take  a decision  about  the recognition  of an examination  within  30 days.  \n \n Part  V \nCOMMON  PROVISIONS  \nArticle  32 \nStudy  documentation  \n(1) The study  documentation  in a study  programme  and documents  proving  the completion  of \nstud ies in a study  programme  are governed  by Section  57 of the Act. \n (2) Pursuant  to Section  57, Para  1 (a) of the Act, CTU issues  a student  ID, which  is a document  proving  \nthe legal  status  of student.   The student  ID serves  for identification  of a student  and is issued  as \na) A CTU student  ID, or \nb) A joint  CTU student  ID and the International  Student  Identity  Card  (ISIC).  \n (3) Student  IDs are issued  by the CTU Computing  and Information  Centre.  \n    ---------------------------------------------------------------\n    Query: What is the purpose of the study documentation?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.3333333333333333,
+        "Groundedness": 0.5,
+        "Answer Relevance": 0.3333333333333333
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.3370237350463867,
+        "generation_time_sec": 2.5858922004699707,
+        "rag_total_time_sec": 3.9229159355163574,
+        "evaluation_time_sec": 3.83180570602417,
+        "total_time_sec": 8.145997524261475
+    },
+    "token_estimates": {
+        "input_tokens": 487,
+        "output_tokens": 39,
+        "total_tokens": 526,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

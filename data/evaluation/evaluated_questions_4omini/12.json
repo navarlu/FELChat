@@ -1,0 +1,42 @@
+{
+    "id": 12,
+    "question": "Are graduates of bachelor study programmes awarded the academic degree 'Bachelor'?",
+    "answer": "Yes",
+    "article": "Article 34(4)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, graduates of bachelor study programmes are awarded the academic degree 'Bachelor' (abbreviated as “Bc.”) placed before the name. Article(4)(1).",
+    "context": "Document 1: (4) Graduates  of bachelor  study  programmes  are awarded  the academic  degree  Bachel or \n(abbreviated  as “Bc.”  and placed  before  the name);  in the field  of art graduates  are awarded  the \nacademic  degree  Bachelor  of Arts (abbreviated  as “BcA.”  and placed  before  the name).  \n (5) Graduates  of master  study  programmes  in the area  of technical  sciences  and technologies  are \nawarded  the academic  degree  “Engineer”  (abbreviated  as “Ing.”  and placed  before  the name);  in \nthe field  of architecture  graduates  are awarded  the academic  degree  “Engineer  Architect”  \n(abbreviated  as “Ing.   Arch.”  and placed  before  the name);  in the field  of art graduates  are \nawarded  the academic  degree  “Master  of Arts”  (abbreviated  as “MgA.”  and placed  before  the \nname).  \n (6) Graduates  of doctoral  study  programmes  are awarded  the academic  degree  “Doctor”  \n(abbreviated  as “Ph.D.”  and placed  after the name).  \n (7) Studies  are also terminated  by \na) Withdrawal  from  the studies,  \nb) Failure  to fulfil  the requirements  of the study  programme  under  these  Rules,  \nc) Withdrawal  of the accreditation  of the study  programme,  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n30 d) Termination  of the accreditation  of the study  prog ramme,  \ne) Expulsion  from  the studies  pursuant  to Section  65, Para  1 (c) of the Act and Section  67 of the \nAct, \nf) Termination  of the provision  of the study  programme  for reasons  listed  in Section  81 (b), \nPara  3 of the Act, \ng) Expiration  of the licence  to provide  the study  programme  (Section  86, Para  3 and 4 of the \nAct).  \n (8) The respective  faculty  will issue  to a study  graduate  or a former  student  who  terminated  their  \nstudies  pursuant  to Para  7 hereof  upon  their  request  a certificate  of completed  examinations  or a \ncertifi cate  of studies  and the award  of an academic  degree.   \n (9) The day of the termination  of studies  is \na) Pursuant  to Para  7 (a) the day when  the faculty  or CTU where  the student  is enrolled  receives  \ntheir  statement  in writing  of their  withdrawal  from  studies,  \nb) Pursua nt to Para  7 (b) the day when  the decision  on termination  of studies  comes  into force,  \nc) Pursuant  to Para  7 (c) the day when  the deadline  set by a decision  of the Ministry  expires,  \nd) Pursuant  to Para  7 (d) the day when  CTU announces  the termination  of the stud y \nprogramme,  or a day when  the period  for which  an accreditation  was granted  expires,  \ne) Pursuant  to Para  7 (e) the day when  the decision  on expulsion  from  studies  came  into force.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (4) Graduates  of bachelor  study  programmes  are awarded  the academic  degree  Bachel or \n(abbreviated  as “Bc.”  and placed  before  the name);  in the field  of art graduates  are awarded  the \nacademic  degree  Bachelor  of Arts (abbreviated  as “BcA.”  and placed  before  the name).  \n (5) Graduates  of master  study  programmes  in the area  of technical  sciences  and technologies  are \nawarded  the academic  degree  “Engineer”  (abbreviated  as “Ing.”  and placed  before  the name);  in \nthe field  of architecture  graduates  are awarded  the academic  degree  “Engineer  Architect”  \n(abbreviated  as “Ing.   Arch.”  and placed  before  the name);  in the field  of art graduates  are \nawarded  the academic  degree  “Master  of Arts”  (abbreviated  as “MgA.”  and placed  before  the \nname).  \n (6) Graduates  of doctoral  study  programmes  are awarded  the academic  degree  “Doctor”  \n(abbreviated  as “Ph.D.”  and placed  after the name).  \n (7) Studies  are also terminated  by \na) Withdrawal  from  the studies,  \nb) Failure  to fulfil  the requirements  of the study  programme  under  these  Rules,  \nc) Withdrawal  of the accreditation  of the study  programme,  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n30 d) Termination  of the accreditation  of the study  prog ramme,  \ne) Expulsion  from  the studies  pursuant  to Section  65, Para  1 (c) of the Act and Section  67 of the \nAct, \nf) Termination  of the provision  of the study  programme  for reasons  listed  in Section  81 (b), \nPara  3 of the Act, \ng) Expiration  of the licence  to provide  the study  programme  (Section  86, Para  3 and 4 of the \nAct).  \n (8) The respective  faculty  will issue  to a study  graduate  or a former  student  who  terminated  their  \nstudies  pursuant  to Para  7 hereof  upon  their  request  a certificate  of completed  examinations  or a \ncertifi cate  of studies  and the award  of an academic  degree.   \n (9) The day of the termination  of studies  is \na) Pursuant  to Para  7 (a) the day when  the faculty  or CTU where  the student  is enrolled  receives  \ntheir  statement  in writing  of their  withdrawal  from  studies,  \nb) Pursua nt to Para  7 (b) the day when  the decision  on termination  of studies  comes  into force,  \nc) Pursuant  to Para  7 (c) the day when  the deadline  set by a decision  of the Ministry  expires,  \nd) Pursuant  to Para  7 (d) the day when  CTU announces  the termination  of the stud y \nprogramme,  or a day when  the period  for which  an accreditation  was granted  expires,  \ne) Pursuant  to Para  7 (e) the day when  the decision  on expulsion  from  studies  came  into force.  \n\n    ---------------------------------------------------------------\n    Query: Are graduates of bachelor study programmes awarded the academic degree 'Bachelor'?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.00016785,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.139030933380127,
+        "generation_time_sec": 1.7042791843414307,
+        "rag_total_time_sec": 3.8433101177215576,
+        "evaluation_time_sec": 2.9404191970825195,
+        "total_time_sec": 7.110589265823364
+    },
+    "token_estimates": {
+        "input_tokens": 958,
+        "output_tokens": 0,
+        "total_tokens": 958,
+        "cost_usd": 5.7e-05,
+        "cost_czk": 0.001351
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "id": 56,
+    "question": "What is the purpose of the Study and Examination Rules?",
+    "answer": "The Study and Examination Rules provide guidelines for study in bachelor, master, and doctoral study programmes at CTU.",
+    "article": "Article 1(1)",
+    "out_of_scope": false,
+    "answer_generated": "The Study and Examination Rules outline the procedures and responsibilities for doctoral study programmes, including the roles of ORO and ORP, the approval processes for supervisors, ISP, examination committees, and dissertation thesis reviewers, as well as the monitoring and assessment of ongoing studies. These rules ensure a structured and standardized approach to doctoral education and examination processes at the institution.",
+    "context": "Document 1: ORO  chair  is the guarantor  of the respective  field  of \nstudy.   Guarantors  of programmes  and fields  of study  are appointed  and dismissed  by the dean.  \n (6) ORP  primarily  \na) Monitors  and assesses  ongoing  studies  in doctoral  study  programmes;  it submits  the results  \nof the monitoring  to the relevant  Scientific  Council  at least  once  a year,  \nb) Takes  care  of updating  and development  of the doctoral  study  programme,  \nc) Initiates  proposals  to adjust  and create  new  doctoral  study  programmes,  \nd) Fulfils  functions  of ORO  pursuant  to Article  7 hereof  in case  no ORO  is set up.  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n19 (7) ORO  primarily  \na) Prior  to accepting  an applicant  it approves  the proposals  of heads  of training  centres  for \ngeneral  subjects  or topics  of dissertation  theses  and supervisors  for these  topics;  after  an \napplicant  is accepted,  it approves  supervisor -specialists  upon  a proposal  of the supervisor  \npursuant  to Article  24, Para  1 hereof,  \nb) Approves  ISP and the amendments  thereof  pursuant  to Article  26, Para  1 and Para  5 hereof,  \nc) Approves  the proposal  for the composition  of examination  committees,  discusses  the \ncomposition  of committees  for state doctoral  examinations  pursuant  to Article  29, Para  2 \nhereof  and committees  for the presentation  and defence  of dissertation  theses  pursuant  to \nArticle  30, Para  3 hereof,  \nd) Approves  reviewers  of dissertation  theses  pursuant  to Article  30, Para  4 hereof,  \ne) Monitors  and assesses  ongoing  studies  in the given  doctoral  study  programme;  it submits  the \nresults  of the monitoring  to ORP  at least  once  a year  pursuant  to Para  9 hereof , \nf) Comments  on requests  to hold  expert  discussion  on the dissertation  thesis  remotely  \npursuant  to Article  27, Para  10, as well as requests  of individual  members  of the committee  \nor reviewers  to participate  remotely  in a state  doctoral  examination  or defence  of the \ndissertation  thesis,  \ng) Can propose  to hold  a state  doctoral  examination  or defenc e of the dissertation  thesis  \nremotely.  \n (8) Specialization  committees  can carry  out approvals  pursuant  to Para  7 (a) to (d) hereof  based  on a \nproposal  of the chair  electronically.  \n (9) Sessions  of ORP  or ORO  are held  when  necessary,  but at least  once  a year;  the sessions  are \npresided  over  by the chair.   At ORP  sessions,  the ORO  chairs  submit  overviews  of the activities  \nundertaken  by fields  of study  in the form  of a report  in writing.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: ORO  chair  is the guarantor  of the respective  field  of \nstudy.   Guarantors  of programmes  and fields  of study  are appointed  and dismissed  by the dean.  \n (6) ORP  primarily  \na) Monitors  and assesses  ongoing  studies  in doctoral  study  programmes;  it submits  the results  \nof the monitoring  to the relevant  Scientific  Council  at least  once  a year,  \nb) Takes  care  of updating  and development  of the doctoral  study  programme,  \nc) Initiates  proposals  to adjust  and create  new  doctoral  study  programmes,  \nd) Fulfils  functions  of ORO  pursuant  to Article  7 hereof  in case  no ORO  is set up.  Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n19 (7) ORO  primarily  \na) Prior  to accepting  an applicant  it approves  the proposals  of heads  of training  centres  for \ngeneral  subjects  or topics  of dissertation  theses  and supervisors  for these  topics;  after  an \napplicant  is accepted,  it approves  supervisor -specialists  upon  a proposal  of the supervisor  \npursuant  to Article  24, Para  1 hereof,  \nb) Approves  ISP and the amendments  thereof  pursuant  to Article  26, Para  1 and Para  5 hereof,  \nc) Approves  the proposal  for the composition  of examination  committees,  discusses  the \ncomposition  of committees  for state doctoral  examinations  pursuant  to Article  29, Para  2 \nhereof  and committees  for the presentation  and defence  of dissertation  theses  pursuant  to \nArticle  30, Para  3 hereof,  \nd) Approves  reviewers  of dissertation  theses  pursuant  to Article  30, Para  4 hereof,  \ne) Monitors  and assesses  ongoing  studies  in the given  doctoral  study  programme;  it submits  the \nresults  of the monitoring  to ORP  at least  once  a year  pursuant  to Para  9 hereof , \nf) Comments  on requests  to hold  expert  discussion  on the dissertation  thesis  remotely  \npursuant  to Article  27, Para  10, as well as requests  of individual  members  of the committee  \nor reviewers  to participate  remotely  in a state  doctoral  examination  or defence  of the \ndissertation  thesis,  \ng) Can propose  to hold  a state  doctoral  examination  or defenc e of the dissertation  thesis  \nremotely.  \n (8) Specialization  committees  can carry  out approvals  pursuant  to Para  7 (a) to (d) hereof  based  on a \nproposal  of the chair  electronically.  \n (9) Sessions  of ORP  or ORO  are held  when  necessary,  but at least  once  a year;  the sessions  are \npresided  over  by the chair.   At ORP  sessions,  the ORO  chairs  submit  overviews  of the activities  \nundertaken  by fields  of study  in the form  of a report  in writing.  \n    ---------------------------------------------------------------\n    Query: What is the purpose of the Study and Examination Rules?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 0.8333333333333333,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.0053162574768066,
+        "generation_time_sec": 5.50025486946106,
+        "rag_total_time_sec": 7.505571126937866,
+        "evaluation_time_sec": 3.931116819381714,
+        "total_time_sec": 11.794418334960938
+    },
+    "token_estimates": {
+        "input_tokens": 944,
+        "output_tokens": 29,
+        "total_tokens": 973,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

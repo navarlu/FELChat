@@ -1,0 +1,42 @@
+{
+    "id": 99,
+    "question": "What is the minimum amount of credits per semester in the bachelor programme?",
+    "answer": "Minimum credits per semester in CTU bachelor's programme are 15 credits for the first semester and 20 credits in the subsequent semesters.",
+    "article": "Article 14(4)",
+    "out_of_scope": false,
+    "answer_generated": "The minimum amount of credits per semester in the bachelor programme is 15 credits in the first semester and 40 credits in each subsequent semester. Article(10)(4).",
+    "context": "Document 1: If a student  fails to meet  the conditions  of any \nmonitoring  of study  obligations  during  their  studies,  their  studies  will be terminated  pursuant  to \nSection  56, Para  1 (b) of the Act and Article  34, Para  7 (b).  The decision -making  in this matter  is \ngoverned  by Section  68 of the Act.  \n (3) The dates  and organization  of the enrolment  in specific  time  sections  of the studies  are set by the \ndean.  \n (4) The minimum  amount  of credits  that must  be earned  in order  to be able  to continue  the studies  \nPeriod  of study  Bachelor  study  \nprogramme  Master  study  \nprogramme  \nIn the first semester  of studies  15 20 \nIn the first academic  year  of studies  (2 semesters)  30 40 \nIn each  subsequent  academic  year  of studies  (2 semesters)  40 40 \nIn each  subsequent  academic  year  of studies  (2 \nsemesters),  if the person  was not a student  of the given  \nstudy  programme  for part of the academic  year  \n(interruption  of studies,  transfer)  20 20 \n \n \nThe number  of credits  earned  includes  only  credits  for subjects  that are included  in the study  plan  \nof the study  programme  in which  the student  is enrolled.  \n (5) The dean  can set a different  number  of credits  than  cited  in Para  4 hereof,  pursuant  to Article  13, \nPara  9 to 11, or in case  in the given  academic  year  the student  is short  of fewer  than  40 credits  to \nachieve  the total  amount  of credits  required  during  the whole  course  of studies.   \n (6) Credits  for subjects  registered  and recognized  under  Article  13, Para  10 hereof  are not considered  \ncredits  earned  in the given  semester,  acad emic  year  or unit of study.   They  are only  included  in the \ntotal  amount  of credits  obtained  by the student.   \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: If a student  fails to meet  the conditions  of any \nmonitoring  of study  obligations  during  their  studies,  their  studies  will be terminated  pursuant  to \nSection  56, Para  1 (b) of the Act and Article  34, Para  7 (b).  The decision -making  in this matter  is \ngoverned  by Section  68 of the Act.  \n (3) The dates  and organization  of the enrolment  in specific  time  sections  of the studies  are set by the \ndean.  \n (4) The minimum  amount  of credits  that must  be earned  in order  to be able  to continue  the studies  \nPeriod  of study  Bachelor  study  \nprogramme  Master  study  \nprogramme  \nIn the first semester  of studies  15 20 \nIn the first academic  year  of studies  (2 semesters)  30 40 \nIn each  subsequent  academic  year  of studies  (2 semesters)  40 40 \nIn each  subsequent  academic  year  of studies  (2 \nsemesters),  if the person  was not a student  of the given  \nstudy  programme  for part of the academic  year  \n(interruption  of studies,  transfer)  20 20 \n \n \nThe number  of credits  earned  includes  only  credits  for subjects  that are included  in the study  plan  \nof the study  programme  in which  the student  is enrolled.  \n (5) The dean  can set a different  number  of credits  than  cited  in Para  4 hereof,  pursuant  to Article  13, \nPara  9 to 11, or in case  in the given  academic  year  the student  is short  of fewer  than  40 credits  to \nachieve  the total  amount  of credits  required  during  the whole  course  of studies.   \n (6) Credits  for subjects  registered  and recognized  under  Article  13, Para  10 hereof  are not considered  \ncredits  earned  in the given  semester,  acad emic  year  or unit of study.   They  are only  included  in the \ntotal  amount  of credits  obtained  by the student.   \n\n    ---------------------------------------------------------------\n    Query: What is the minimum amount of credits per semester in the bachelor programme?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 0.5,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.00012719999999999997,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.7154090404510498,
+        "generation_time_sec": 1.2548904418945312,
+        "rag_total_time_sec": 2.970299482345581,
+        "evaluation_time_sec": 2.5894665718078613,
+        "total_time_sec": 5.878389835357666
+    },
+    "token_estimates": {
+        "input_tokens": 718,
+        "output_tokens": 34,
+        "total_tokens": 752,
+        "cost_usd": 0.000125,
+        "cost_czk": 0.00293
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "id": 98,
+    "question": "Are the degrees attained at CTU internationally acceptable?",
+    "answer": "Yes, degrees from CTU are internationally recognized (not explicitely mentioned but ECTS is mentioned ... depends if the model uses its trained context).",
+    "article": "Not explicitly stated in the document.",
+    "out_of_scope": true,
+    "answer_generated": "<|assistant|>\nYes, degrees attained at CTU are internationally acceptable. According to Document 1, graduates of study programmes implemented in collaboration with a foreign university are awarded an academic degree under Czech law, and possibly also an academic degree from the foreign university according to the respective country's legal regulations. This indicates that the degrees are recognized internationally.",
+    "context": "Document 1: (11) Studies  in bachelor,  master  and doctoral  study  programmes  can also be organized  in \ncollaboration  with  a foreign  university  that implements  a related  study  programme.   The \nconditions  of such  collaboration  will be specified  by an agreement  concluded  between  the \nparticipating  universities.   Studies  can also be carried  out in collaboration  with  multiple  \nuniversities.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n4 (12) Graduates  of study  programmes  implemented  in the framework  of cooperation  with  a \nforeign  universit y are awarded  an academic  degree  pursuant  to Section  45, Para  4; Section  46, \nPara  4; or Section  47, Para  5 of the Act, and possibly  also an academic  degree  of the foreign  \nuniversity  pursuant  to legal  regulations  of the respective  country.   The university  diploma  includes  \nthe name  of the collaborating  foreign  university  and,  if applicable,  also the fact that the awarded  \ninternational  academic  degree  is a joint  degree  awarded  simultaneously  at the foreign  university.  \n When  implementing  study  programmes  in the framework  of cooperation  of multiple  universities,  \nthe process  is handled  in a similar  manner.   \n \n Article  3a \nEnsuring  continuation  of studies  as a result  of expiration  of the accreditation  of a study  \nprogramme  \n \n1) If a student  studies  in an accredited  study  programme  whose  accreditation  expires3, they  will \nbe provided  with  a possibility  to continue  in the studies  of the same  or similar  study  \nprogramme  at CTU;  if the continuation  of studies  at CTU cannot  be ensured,  CTU is obliged  \nto provide  the students  with  a possibility  to study  at another  university.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (11) Studies  in bachelor,  master  and doctoral  study  programmes  can also be organized  in \ncollaboration  with  a foreign  university  that implements  a related  study  programme.   The \nconditions  of such  collaboration  will be specified  by an agreement  concluded  between  the \nparticipating  universities.   Studies  can also be carried  out in collaboration  with  multiple  \nuniversities.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n4 (12) Graduates  of study  programmes  implemented  in the framework  of cooperation  with  a \nforeign  universit y are awarded  an academic  degree  pursuant  to Section  45, Para  4; Section  46, \nPara  4; or Section  47, Para  5 of the Act, and possibly  also an academic  degree  of the foreign  \nuniversity  pursuant  to legal  regulations  of the respective  country.   The university  diploma  includes  \nthe name  of the collaborating  foreign  university  and,  if applicable,  also the fact that the awarded  \ninternational  academic  degree  is a joint  degree  awarded  simultaneously  at the foreign  university.  \n When  implementing  study  programmes  in the framework  of cooperation  of multiple  universities,  \nthe process  is handled  in a similar  manner.   \n \n Article  3a \nEnsuring  continuation  of studies  as a result  of expiration  of the accreditation  of a study  \nprogramme  \n \n1) If a student  studies  in an accredited  study  programme  whose  accreditation  expires3, they  will \nbe provided  with  a possibility  to continue  in the studies  of the same  or similar  study  \nprogramme  at CTU;  if the continuation  of studies  at CTU cannot  be ensured,  CTU is obliged  \nto provide  the students  with  a possibility  to study  at another  university.  \n    ---------------------------------------------------------------\n    Query: Are the degrees attained at CTU internationally acceptable?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 0.7777777777777777,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.9704477787017822,
+        "generation_time_sec": 4.643033027648926,
+        "rag_total_time_sec": 6.613480806350708,
+        "evaluation_time_sec": 4.266942501068115,
+        "total_time_sec": 11.268017768859863
+    },
+    "token_estimates": {
+        "input_tokens": 725,
+        "output_tokens": 38,
+        "total_tokens": 763,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

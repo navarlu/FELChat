@@ -1,0 +1,42 @@
+{
+    "id": 6,
+    "question": "Is the maximum period of study for doctoral programmes 8 years?",
+    "answer": "Yes",
+    "article": "Article 3(8)",
+    "out_of_scope": false,
+    "answer_generated": "No, the maximum period of study for doctoral programmes is not 8 years. According to the provided document, the standard period of study for doctoral programmes is a minimum of three and a maximum of four years. The period can be extended for student-parents by the recognized period of parenthood, but the overall period still cannot exceed the maximum period of study, which is four years.",
+    "context": "Document 1: The maximum  duration  of studies  in all forms  of study  is stipulated  in Article  3, Para  8 hereof.  \n (3) The training  centre  is the department  (a department,  a university  institute  participating  in the \nprovision  of doctoral  study  programmes,  a workplace  outside  CTU)  where  a specialized  part of the \nstudy  programme  takes  place.  \n (4) The standard  period  of study  in doctoral  study  programmes  is minimum  three  and maximum  four  \nyears.  \n (5) The period  of study  in full-time  form  of doctoral  study  programme  may  not exceed  the standard  \nperiod  of study.   In case of student -parents,  the dean  may  extend  this period  by a maximum  of the \nrecognized  period  of parenthood  on condition  that they  do not interrupt  their  studies  in that \nperiod  and that the overall  period  of study  does  not exceed  the maximum  period  of stud y. This \ndoes  not affect  Article  6, Para  6 of the CTU Rules  for Granting  Scholarships.   The study  in part-time  \nor combined  form  of study  in doctoral  study  programmes  can be extended  by up to the maximum  \nperiod  of study.  \n (6) The study  in doctoral  study  programmes  can be completed  in a shorter  than  standard  period  of \ntime  based  on the valid  ISP and in accordance  with  Article  26 hereof.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The maximum  duration  of studies  in all forms  of study  is stipulated  in Article  3, Para  8 hereof.  \n (3) The training  centre  is the department  (a department,  a university  institute  participating  in the \nprovision  of doctoral  study  programmes,  a workplace  outside  CTU)  where  a specialized  part of the \nstudy  programme  takes  place.  \n (4) The standard  period  of study  in doctoral  study  programmes  is minimum  three  and maximum  four  \nyears.  \n (5) The period  of study  in full-time  form  of doctoral  study  programme  may  not exceed  the standard  \nperiod  of study.   In case of student -parents,  the dean  may  extend  this period  by a maximum  of the \nrecognized  period  of parenthood  on condition  that they  do not interrupt  their  studies  in that \nperiod  and that the overall  period  of study  does  not exceed  the maximum  period  of stud y. This \ndoes  not affect  Article  6, Para  6 of the CTU Rules  for Granting  Scholarships.   The study  in part-time  \nor combined  form  of study  in doctoral  study  programmes  can be extended  by up to the maximum  \nperiod  of study.  \n (6) The study  in doctoral  study  programmes  can be completed  in a shorter  than  standard  period  of \ntime  based  on the valid  ISP and in accordance  with  Article  26 hereof.  \n\n    ---------------------------------------------------------------\n    Query: Is the maximum period of study for doctoral programmes 8 years?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.2197844982147217,
+        "generation_time_sec": 4.799500465393066,
+        "rag_total_time_sec": 6.019284963607788,
+        "evaluation_time_sec": 5.818089723587036,
+        "total_time_sec": 12.228724479675293
+    },
+    "token_estimates": {
+        "input_tokens": 598,
+        "output_tokens": 0,
+        "total_tokens": 598,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

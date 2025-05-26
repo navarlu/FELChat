@@ -1,0 +1,42 @@
+{
+    "id": 67,
+    "question": "What is the role of the head of department in the verification of study results?",
+    "answer": "The head of department is responsible for the overall organization of examinations and the publication of rules.",
+    "article": "Article 10(3)",
+    "out_of_scope": false,
+    "answer_generated": "The head of department plays a role in the verification of study results in the following cases:\n\n* They can propose to the dean the appointment of another academic worker or distinguished professional to lead lectures (Document 1).\n* They are responsible for approving the participation of students in instruction in bachelor study programmes (Article 7).\n* They do not have a direct role in the verification of study results, which is done by the teacher responsible for the subject and the dean (Article 8).\n\nNote: The head of department's role is limited to proposing appointments and approving student participation in instruction, but they are not directly involved in the verification of study results.",
+    "context": "Document 1: (6) Lectu res are usually  led by professors  and docents.   In justified  cases,  the dean  may,  upon  a \nproposal  submitted  by the head  of department,  appoint  another  academic  worker  or \ndistinguished  professional.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n7 (7) Students  in doctoral  study  programmes  can also participate  in instruction  under  Para  3 (b) to (d) \nhereof,  and outstanding  students  in master  study  programmes  can participate  in instruction  in \nbachelor  study  programmes  appointed  by the teacher  responsible  for the subject  and approved  \nby the head  of department.    \n \n Article  8 \nVerification  of study  results  \n(1) Study  results  are verified  by continuous  monitoring  of the studies  and,  on the completion  \nof a subject,  by the award  of an assessment  (a), the award  of a graded  assessment  (ga),  passing  \nof an examination  (ex),  or a combination  of the award  of an assessment  and passing  \nof an examination  (a, ex).  During  verification  of the study  results,  students  are obliged  to present  \nan ID upon  the teacher’s  request.   A student  ID, an identity  card,  a passport  or a driving  licen ce are \naccepted  as a valid  ID. \n (2) The dean  will set final  deadlines  for obtaining  an assessment,  a graded  assessment  in subjects  \nregistered  in the given  semester  or academic  year  and taking  of examinations.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (6) Lectu res are usually  led by professors  and docents.   In justified  cases,  the dean  may,  upon  a \nproposal  submitted  by the head  of department,  appoint  another  academic  worker  or \ndistinguished  professional.   Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n7 (7) Students  in doctoral  study  programmes  can also participate  in instruction  under  Para  3 (b) to (d) \nhereof,  and outstanding  students  in master  study  programmes  can participate  in instruction  in \nbachelor  study  programmes  appointed  by the teacher  responsible  for the subject  and approved  \nby the head  of department.    \n \n Article  8 \nVerification  of study  results  \n(1) Study  results  are verified  by continuous  monitoring  of the studies  and,  on the completion  \nof a subject,  by the award  of an assessment  (a), the award  of a graded  assessment  (ga),  passing  \nof an examination  (ex),  or a combination  of the award  of an assessment  and passing  \nof an examination  (a, ex).  During  verification  of the study  results,  students  are obliged  to present  \nan ID upon  the teacher’s  request.   A student  ID, an identity  card,  a passport  or a driving  licen ce are \naccepted  as a valid  ID. \n (2) The dean  will set final  deadlines  for obtaining  an assessment,  a graded  assessment  in subjects  \nregistered  in the given  semester  or academic  year  and taking  of examinations.  \n\n    ---------------------------------------------------------------\n    Query: What is the role of the head of department in the verification of study results?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.3333333333333333,
+        "Groundedness": 0.6666666666666666,
+        "Answer Relevance": 0.6666666666666666
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.4714572429656982,
+        "generation_time_sec": 4.677747011184692,
+        "rag_total_time_sec": 6.149204254150391,
+        "evaluation_time_sec": 3.7827370166778564,
+        "total_time_sec": 10.28344178199768
+    },
+    "token_estimates": {
+        "input_tokens": 648,
+        "output_tokens": 28,
+        "total_tokens": 676,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "id": 93,
+    "question": "How many times can I fail a subject before getting expelled?",
+    "answer": "You can fail a subject twice (two enrollments) before being expelled.",
+    "article": "Article 6(3)",
+    "out_of_scope": false,
+    "answer_generated": "According to the document, there is no specific information about the number of times a student can fail a subject before getting expelled. The document only mentions the possibility of expulsion in case of a deliberate committing of a serious disciplinary offence. It does not provide information about the consequences of failing a subject.",
+    "context": "Document 1: (2) A disciplinary offence pursuant to Section 64 of the Act, committed by negligence, and a less \nserious disciplinary offence may be heard and discussed  without imposing a sanction.  \n (3) The imposition of a sanction may be waived provided the hearing and discussion  of the \ndisciplinary offence leads to rectification.  \n (4) When hearing and discussing the imposition of sanctions, the nature of the action that led to the \ndisciplinary offence, the c ircumstances under which it occurred, the consequences caused, the 3  degree of culpability, as well as the previous conduct of the student who committed the \ndisciplinary offence, and the demonstrated efforts to rectify the consequences are taken into \naccount .  A student can be expelled from studies in case of a deliberate committing of a serious \ndisciplinary offence.  \n (5) The decision to impose a sanction is communicated only to the student and is not public; this is \nwithout prejudice to the possibility to publish an anonymized overview of disciplinary offences \nand imposed sanctions.  \n (6) The time period and the conditions of the rectification in case of a conditional expulsion from \nstudies are set according to the level of the gravity of the disciplinary offence; this t ime period is \nset to a minimum of six months and a maximum of three years.  \n (7) If a student commits another disciplinary offence during the probation period, with the exception \nof less serious disciplinary offences committed out of negligence, they may be expe lled from \nstudies.  \n \n \n \n \n \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (2) A disciplinary offence pursuant to Section 64 of the Act, committed by negligence, and a less \nserious disciplinary offence may be heard and discussed  without imposing a sanction.  \n (3) The imposition of a sanction may be waived provided the hearing and discussion  of the \ndisciplinary offence leads to rectification.  \n (4) When hearing and discussing the imposition of sanctions, the nature of the action that led to the \ndisciplinary offence, the c ircumstances under which it occurred, the consequences caused, the 3  degree of culpability, as well as the previous conduct of the student who committed the \ndisciplinary offence, and the demonstrated efforts to rectify the consequences are taken into \naccount .  A student can be expelled from studies in case of a deliberate committing of a serious \ndisciplinary offence.  \n (5) The decision to impose a sanction is communicated only to the student and is not public; this is \nwithout prejudice to the possibility to publish an anonymized overview of disciplinary offences \nand imposed sanctions.  \n (6) The time period and the conditions of the rectification in case of a conditional expulsion from \nstudies are set according to the level of the gravity of the disciplinary offence; this t ime period is \nset to a minimum of six months and a maximum of three years.  \n (7) If a student commits another disciplinary offence during the probation period, with the exception \nof less serious disciplinary offences committed out of negligence, they may be expe lled from \nstudies.  \n \n \n \n \n \n\n    ---------------------------------------------------------------\n    Query: How many times can I fail a subject before getting expelled?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.3333333333333333,
+        "Groundedness": 0.3333333333333333,
+        "Answer Relevance": 0.3333333333333333
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.4089887142181396,
+        "generation_time_sec": 2.3928580284118652,
+        "rag_total_time_sec": 3.801846742630005,
+        "evaluation_time_sec": 4.112890958786011,
+        "total_time_sec": 8.291236400604248
+    },
+    "token_estimates": {
+        "input_tokens": 655,
+        "output_tokens": 17,
+        "total_tokens": 672,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

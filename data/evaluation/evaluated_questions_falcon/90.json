@@ -1,0 +1,42 @@
+{
+    "id": 90,
+    "question": "For how long can I interrupt my studies?",
+    "answer": "You can apply for an interruption by submitting a written request to the dean, stating the reason and duration of the interruption.",
+    "article": "Article 13(5)",
+    "out_of_scope": false,
+    "answer_generated": "The documents provided do not specify a maximum duration for interrupting studies. However, it mentions that studies can be interrupted for serious reasons during the instruction period or examination period. The decision on interruption is made by the dean and includes the start and end dates of the interruption. For specific duration limits, you should consult Section 68 of the Act or seek clarification from the faculty.",
+    "context": "Document 1: Studies  cannot  be interrupted  when  the regular  date and \nthe retake  date  of the state  final  examinations  are held  in the course  of one semester.   During  the \ninterruption,  the person  does  not have  a student  status.   In the course  of the instruction  period  or \nthe examination  period,  studies  may  be interrupted  only  for serious  reasons.   Also  interruption  of \nstudies  cannot  be granted  in case  when,  after  resuming  the studies  after  an interruption,  the \nstudent’s  studies  would  be immediately  terminated  pursuant  to Section  56, Para  1 (b) of the Act \nand Article  34, Para 7 (b).  The decision  of the dean  concerning  the interruption  of studies  is \nregulated  by Section  68 of the Act.  The dean’s  decision  in writing  is recorded  in the CTU electronic  \ninformation  system  and is filed  in the student’s  documentation.   The decision  on the interruption  \nof studies  includes  the date  of the start  of the interruption  of studies,  the date  of the end of the \ninterruption  of studies,  and the date  of re-enrolment  in studies.   \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: Studies  cannot  be interrupted  when  the regular  date and \nthe retake  date  of the state  final  examinations  are held  in the course  of one semester.   During  the \ninterruption,  the person  does  not have  a student  status.   In the course  of the instruction  period  or \nthe examination  period,  studies  may  be interrupted  only  for serious  reasons.   Also  interruption  of \nstudies  cannot  be granted  in case  when,  after  resuming  the studies  after  an interruption,  the \nstudent’s  studies  would  be immediately  terminated  pursuant  to Section  56, Para  1 (b) of the Act \nand Article  34, Para 7 (b).  The decision  of the dean  concerning  the interruption  of studies  is \nregulated  by Section  68 of the Act.  The dean’s  decision  in writing  is recorded  in the CTU electronic  \ninformation  system  and is filed  in the student’s  documentation.   The decision  on the interruption  \nof studies  includes  the date  of the start  of the interruption  of studies,  the date  of the end of the \ninterruption  of studies,  and the date  of re-enrolment  in studies.   \n\n    ---------------------------------------------------------------\n    Query: For how long can I interrupt my studies?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 0.6666666666666666,
+        "Answer Relevance": 0.6666666666666666
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.6502811908721924,
+        "generation_time_sec": 4.611997365951538,
+        "rag_total_time_sec": 6.2622785568237305,
+        "evaluation_time_sec": 4.400780916213989,
+        "total_time_sec": 11.047765254974365
+    },
+    "token_estimates": {
+        "input_tokens": 538,
+        "output_tokens": 32,
+        "total_tokens": 570,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

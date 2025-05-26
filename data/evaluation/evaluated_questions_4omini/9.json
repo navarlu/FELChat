@@ -1,0 +1,42 @@
+{
+    "id": 9,
+    "question": "Are students required to present an ID during the verification of study results?",
+    "answer": "Yes",
+    "article": "Article 8(1)",
+    "out_of_scope": false,
+    "answer_generated": "Yes, students are obliged to present an ID upon the teacher’s request during the verification of study results (Article 8(1)).",
+    "context": "Document 1: Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n7 (7) Students  in doctoral  study  programmes  can also participate  in instruction  under  Para  3 (b) to (d) \nhereof,  and outstanding  students  in master  study  programmes  can participate  in instruction  in \nbachelor  study  programmes  appointed  by the teacher  responsible  for the subject  and approved  \nby the head  of department.    \n \n Article  8 \nVerification  of study  results  \n(1) Study  results  are verified  by continuous  monitoring  of the studies  and,  on the completion  \nof a subject,  by the award  of an assessment  (a), the award  of a graded  assessment  (ga),  passing  \nof an examination  (ex),  or a combination  of the award  of an assessment  and passing  \nof an examination  (a, ex).  During  verification  of the study  results,  students  are obliged  to present  \nan ID upon  the teacher’s  request.   A student  ID, an identity  card,  a passport  or a driving  licen ce are \naccepted  as a valid  ID. \n (2) The dean  will set final  deadlines  for obtaining  an assessment,  a graded  assessment  in subjects  \nregistered  in the given  semester  or academic  year  and taking  of examinations.  \n (3) In connection  with  child  care,  students -parents  are entitl ed, in the semester  in which  they  were  \non maternity  leave,  to extended  deadlines  for fulfilment  of study  obligations,  as well as for \nfulfilment  of requirements  for progressing  to the next  semester,  year  or unit,  by a period  \nequivalent  to the duration  of maternity  leave  on condition  that they  do not interrupt  their  studies  \nin that period.   Students -parents  are obliged  to inform  the study  department  or the relevant  vice-\nrector  about  taking  advantage  of this right;  the study  department  or the vice-rector  will inform  \nthem  about  further  steps.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n7 (7) Students  in doctoral  study  programmes  can also participate  in instruction  under  Para  3 (b) to (d) \nhereof,  and outstanding  students  in master  study  programmes  can participate  in instruction  in \nbachelor  study  programmes  appointed  by the teacher  responsible  for the subject  and approved  \nby the head  of department.    \n \n Article  8 \nVerification  of study  results  \n(1) Study  results  are verified  by continuous  monitoring  of the studies  and,  on the completion  \nof a subject,  by the award  of an assessment  (a), the award  of a graded  assessment  (ga),  passing  \nof an examination  (ex),  or a combination  of the award  of an assessment  and passing  \nof an examination  (a, ex).  During  verification  of the study  results,  students  are obliged  to present  \nan ID upon  the teacher’s  request.   A student  ID, an identity  card,  a passport  or a driving  licen ce are \naccepted  as a valid  ID. \n (2) The dean  will set final  deadlines  for obtaining  an assessment,  a graded  assessment  in subjects  \nregistered  in the given  semester  or academic  year  and taking  of examinations.  \n (3) In connection  with  child  care,  students -parents  are entitl ed, in the semester  in which  they  were  \non maternity  leave,  to extended  deadlines  for fulfilment  of study  obligations,  as well as for \nfulfilment  of requirements  for progressing  to the next  semester,  year  or unit,  by a period  \nequivalent  to the duration  of maternity  leave  on condition  that they  do not interrupt  their  studies  \nin that period.   Students -parents  are obliged  to inform  the study  department  or the relevant  vice-\nrector  about  taking  advantage  of this right;  the study  department  or the vice-rector  will inform  \nthem  about  further  steps.  \n    ---------------------------------------------------------------\n    Query: Are students required to present an ID during the verification of study results?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.00012074999999999998,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.6255178451538086,
+        "generation_time_sec": 1.0242538452148438,
+        "rag_total_time_sec": 2.6497716903686523,
+        "evaluation_time_sec": 2.9689316749572754,
+        "total_time_sec": 5.972962379455566
+    },
+    "token_estimates": {
+        "input_tokens": 758,
+        "output_tokens": 0,
+        "total_tokens": 758,
+        "cost_usd": 4.5e-05,
+        "cost_czk": 0.001069
+    }
+}

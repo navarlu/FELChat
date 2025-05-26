@@ -1,42 +1,31 @@
-import llama_index.core
+
 import time
 import os
-import numpy as np
 import threading
 import subprocess
 import webbrowser
-from rich.console import Console
 import json
-from trulens.core import Feedback, Select
-from trulens.providers.openai import OpenAI as OpenAIFeedbackProvider
 from index_manager import IndexManager
 from rag_service import RAGService
-
+from flask import request, jsonify
 import sys
 
-# If on Windows, set stdout and stderr encoding
 if os.name == 'nt':  # Check if the operating system is Windows
     import codecs
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
 
-# ---------------------------
-# Load configuration from config.json
-# ---------------------------
 with open('data/configuration/config.json', 'r') as f:
     config = json.load(f)
 
-# Extract configuration values
 INDEX_DIR       = config["index"]["directory"]
 INDEX_NAME      = config["index"]["name"]
 WINDOW_SIZE     = config["index"]["window_size"]
 
 IN_DATABASE_FOLDER = config["folders"]["in_database"]
-TMP_FOLDER         = config["folders"]["tmp"]
+TMP_FOLDER = "/home/karel/FEL/PVTY/FELChat/data/tmp"
 SAVE_FOLDER        = config["folders"]["save_folder"]
 SAVE_FOLDER2       = config["folders"]["save_folder2"]
-
-OPENAI_API_KEY  = config["openai"]["api_key"]
 
 DASHBOARD_PORT  = config["dashboard"]["port"]
 DASHBOARD_VIS = config["dashboard"]["visualization"]
@@ -47,9 +36,6 @@ FLASK_HOST      = config["flask"]["host"]
 FLASK_PORT      = config["flask"]["port"]
 FLASK_DEBUG     = config["flask"]["debug"]
 
-# ---------------------------
-# Initialize components
-# ---------------------------
 from flask import Flask, request
 
 # Create the index manager using configuration values
@@ -58,72 +44,47 @@ manager = IndexManager(index_name=INDEX_NAME, index_dir=INDEX_DIR, window_size=W
 # Create the RAG service using the manager
 rag = RAGService(manager)
 
-console = Console()
-
-# Use the provided OpenAI API key for feedback measurements
-provider = OpenAIFeedbackProvider(api_key=OPENAI_API_KEY)
-
-# Define feedback functions
-f_groundedness = (
-    Feedback(provider.groundedness_measure_with_cot_reasons, name="Groundedness")
-    .on(Select.RecordCalls.retrieve.rets.collect())
-    .on_output()
-)
-f_answer_relevance = (
-    Feedback(provider.relevance_with_cot_reasons, name="Answer Relevance")
-    .on_input()
-    .on_output()
-)
-f_context_relevance = (
-    Feedback(provider.context_relevance_with_cot_reasons, name="Context Relevance")
-    .on_input()
-    .on(Select.RecordCalls.retrieve.rets[:])
-    .aggregate(np.mean)
-)
-
-from trulens.apps.app import TruApp
-
-tru_rag = TruApp(
-    rag,
-    app_name="FELChat",
-    app_version="version_0.1",
-    feedbacks=[f_groundedness, f_answer_relevance, f_context_relevance],
-)
-
-# Optionally, launch the dashboard to view detailed feedback
-if DASHBOARD_VIS == "yes":
-    from trulens.dashboard import run_dashboard
-    print("Dasboard port: ",DASHBOARD_PORT)
-    run_dashboard(port=DASHBOARD_PORT)
-
-
-
 FELChat = Flask(__name__)
 os.makedirs(SAVE_FOLDER, exist_ok=True)
 os.makedirs(SAVE_FOLDER2, exist_ok=True)
 
-# ---------------------------
-# Helper Functions
-# ---------------------------
+
 def get_conversation_history():
     
     conversation_history = None
     return conversation_history
 
-
 @FELChat.route('/query', methods=['POST'])
 def query():
+    print("Received a query request")
+    print("Request data: ", request.data)
+
+
     incoming_data = request.json
-    data = incoming_data[0]
-    user_query = data.get("query")
-    with tru_rag as recording:
-        #GET CONVERSATION HISTORY
-        conversation_history = []
-        rag.conversation_history = conversation_history
-        answer, context_str = rag.query(user_query)
-        return answer, context_str
 
 
+    if not incoming_data or not isinstance(incoming_data, list):
+        return jsonify({"error": "Invalid request format"}), 400
+
+    # Get the last user message as the actual query
+    last_user_msg = next((msg for msg in reversed(incoming_data) if msg["sender"] == "user"), None)
+    if not last_user_msg:
+        return jsonify({"error": "No user message found"}), 400
+
+    user_query = last_user_msg["text"]
+
+    # Construct chat history
+    conversation_history = []
+    for msg in incoming_data:
+        role = "user" if msg["sender"] == "user" else "assistant"
+        conversation_history.append({"role": role, "content": msg["text"]})
+
+    # Set history in RAG
+    rag.conversation_history = conversation_history[:-1]  # omit the last user query to avoid duplication
+
+    # Perform the query
+    answer, docs, context, messages, rag_timings = rag.query(user_query)
+    return jsonify({"answer": answer, "context": context})
 
 def monitor_new_files():
     print("Starting monitoring of the data folder for new JSON and PDF files...")
@@ -142,11 +103,8 @@ def run_streamlit():
 streamlit_thread = threading.Thread(target=run_streamlit, daemon=True)
 streamlit_thread.start()
 webbrowser.open(STREAMLIT_URL)
-
 thread_new = threading.Thread(target=monitor_new_files, daemon=True)
-
 thread_new.start()
-
 
 if __name__ == '__main__':
     FELChat.run(host=FLASK_HOST, port=FLASK_PORT, debug=FLASK_DEBUG)

@@ -1,0 +1,42 @@
+{
+    "id": 43,
+    "question": "Can students interrupt their studies during the examination period without serious reasons?",
+    "answer": "No",
+    "article": "Article 13(6)",
+    "out_of_scope": false,
+    "answer_generated": "No, students cannot interrupt their studies during the examination period without serious reasons. Article(12)(6).",
+    "context": "Document 1: Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n12 (6) The minimum  period  of interruption  of studies  is one semester;  in exceptional  cases  the period  of \ninterruption  of studies  may  be shorter.   Studies  cannot  be interrupted  when  the regular  date and \nthe retake  date  of the state  final  examinations  are held  in the course  of one semester.   During  the \ninterruption,  the person  does  not have  a student  status.   In the course  of the instruction  period  or \nthe examination  period,  studies  may  be interrupted  only  for serious  reasons.   Also  interruption  of \nstudies  cannot  be granted  in case  when,  after  resuming  the studies  after  an interruption,  the \nstudent’s  studies  would  be immediately  terminated  pursuant  to Section  56, Para  1 (b) of the Act \nand Article  34, Para 7 (b).  The decision  of the dean  concerning  the interruption  of studies  is \nregulated  by Section  68 of the Act.  The dean’s  decision  in writing  is recorded  in the CTU electronic  \ninformation  system  and is filed  in the student’s  documentation.  ",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n12 (6) The minimum  period  of interruption  of studies  is one semester;  in exceptional  cases  the period  of \ninterruption  of studies  may  be shorter.   Studies  cannot  be interrupted  when  the regular  date and \nthe retake  date  of the state  final  examinations  are held  in the course  of one semester.   During  the \ninterruption,  the person  does  not have  a student  status.   In the course  of the instruction  period  or \nthe examination  period,  studies  may  be interrupted  only  for serious  reasons.   Also  interruption  of \nstudies  cannot  be granted  in case  when,  after  resuming  the studies  after  an interruption,  the \nstudent’s  studies  would  be immediately  terminated  pursuant  to Section  56, Para  1 (b) of the Act \nand Article  34, Para 7 (b).  The decision  of the dean  concerning  the interruption  of studies  is \nregulated  by Section  68 of the Act.  The dean’s  decision  in writing  is recorded  in the CTU electronic  \ninformation  system  and is filed  in the student’s  documentation.  \n    ---------------------------------------------------------------\n    Query: Can students interrupt their studies during the examination period without serious reasons?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 8.774999999999999e-05,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 2.1343681812286377,
+        "generation_time_sec": 1.1090290546417236,
+        "rag_total_time_sec": 3.2433972358703613,
+        "evaluation_time_sec": 2.9934537410736084,
+        "total_time_sec": 6.590538501739502
+    },
+    "token_estimates": {
+        "input_tokens": 569,
+        "output_tokens": 0,
+        "total_tokens": 569,
+        "cost_usd": 3.4e-05,
+        "cost_czk": 0.000802
+    }
+}

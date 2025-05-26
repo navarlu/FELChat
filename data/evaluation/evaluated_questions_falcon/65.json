@@ -1,0 +1,42 @@
+{
+    "id": 65,
+    "question": "What is the role of the examination committee in the state final examination?",
+    "answer": "The examination committee evaluates the results of the state final examination and announces the overall result.",
+    "article": "Article 16(3)",
+    "out_of_scope": false,
+    "answer_generated": "The examination committee is responsible for the course of the state final examination, including appointing the chair, vice-chair, and members from professors, docents, and specialists approved by the faculty’s Scientific Council, and possibly appointing other members from leading experts in the field by the Ministry. They also sign the report of the examination course.",
+    "context": "Document 1: The course  of the examination  and the announcement  \nof the results  of the state  final  examination  are public.  \n (2) The chair,  the vice-chair  and the members  of the examination  committee  are appointed  by the \ndean  from  among  professors,  docents  and other  specialists  approved  by the faculty’s  Scientific  \nCouncil.   The Ministry  of Education,  Youth  and Sports  (hereinafter  as the “Ministry”)  may  appoint  \nother  members  of the examination  committee  from  among  leading  experts  in the given  field.   A \nreport  is drawn  of the course  of the state  final  examination,  which  is signed  by the chair  and all \nmembers  of the examination  committee  who  were  present  at the examination.   Multi ple \nexamination  committees  may  be established  for one study  programme.   The minimum  number  of \nmembers,  including  the chair,  is 5.  \n (3) The state  final  examination  consists  of several  parts,  each  of which  is assessed  separately  \na) The presentation  and defence  of the bachelor  or master  thesis,  \nb) Examinations  in specialization  subjects  or general  topics,  \nc) Possibly  other  parts  in accordance  with  Para  5 hereof.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: The course  of the examination  and the announcement  \nof the results  of the state  final  examination  are public.  \n (2) The chair,  the vice-chair  and the members  of the examination  committee  are appointed  by the \ndean  from  among  professors,  docents  and other  specialists  approved  by the faculty’s  Scientific  \nCouncil.   The Ministry  of Education,  Youth  and Sports  (hereinafter  as the “Ministry”)  may  appoint  \nother  members  of the examination  committee  from  among  leading  experts  in the given  field.   A \nreport  is drawn  of the course  of the state  final  examination,  which  is signed  by the chair  and all \nmembers  of the examination  committee  who  were  present  at the examination.   Multi ple \nexamination  committees  may  be established  for one study  programme.   The minimum  number  of \nmembers,  including  the chair,  is 5.  \n (3) The state  final  examination  consists  of several  parts,  each  of which  is assessed  separately  \na) The presentation  and defence  of the bachelor  or master  thesis,  \nb) Examinations  in specialization  subjects  or general  topics,  \nc) Possibly  other  parts  in accordance  with  Para  5 hereof.  \n\n    ---------------------------------------------------------------\n    Query: What is the role of the examination committee in the state final examination?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 1.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.4654314517974854,
+        "generation_time_sec": 4.31574010848999,
+        "rag_total_time_sec": 5.781171560287476,
+        "evaluation_time_sec": 5.309318542480469,
+        "total_time_sec": 11.416475296020508
+    },
+    "token_estimates": {
+        "input_tokens": 571,
+        "output_tokens": 28,
+        "total_tokens": 599,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

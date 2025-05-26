@@ -2,18 +2,23 @@ import os
 import threading
 import json
 import shutil
-import PyPDF2  # Added for PDF processing
-
+import PyPDF2  
+import torch
 from llama_index.core import Document, VectorStoreIndex, StorageContext, load_index_from_storage
 from llama_index.core.node_parser import SentenceWindowNodeParser
-
-# If you have these in a separate file, just import them:
 from llama_index.core.postprocessor import MetadataReplacementPostProcessor
 from llama_index.core.indices.postprocessor import SentenceTransformerRerank
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.core import Settings 
 
-# ...and your custom reranker
-from custom_reranker import CustomTimestampReranker  # or inline it
 
+# One global embedder – use CPU/GPU as you like
+EMBED_MODEL = HuggingFaceEmbedding(
+    model_name="BAAI/bge-small-en",            # ★ your choice
+    device="cuda" if torch.cuda.is_available() else "cpu",
+)
+Settings.embed_model = EMBED_MODEL
+# Make a service-context that every Index / QueryEngine will inherit
 
 class IndexManager:
     def __init__(self, index_name, index_dir, window_size):
@@ -32,8 +37,11 @@ class IndexManager:
         else:
             print(f"[IndexManager] Creating new index: {self.index_name}")
             os.makedirs(self.index_path, exist_ok=True)
+            print("[IndexManager] Created new index. step2")
             idx = VectorStoreIndex([])
+            print("[IndexManager] Created new index. step3")
             idx.storage_context.persist(self.index_path)
+            print("[IndexManager] Created new index. step4")
             return idx
 
     def _build_sentence_window_engine(self):
@@ -42,11 +50,11 @@ class IndexManager:
             top_n=4, 
             model="BAAI/bge-reranker-base"
         )
-        custom_reranker = CustomTimestampReranker()
+        
 
         engine = self.index.as_query_engine(
             similarity_top_k=6,
-            node_postprocessors=[postprocessor, rerank, custom_reranker],
+            node_postprocessors=[postprocessor, rerank],
             response_mode="no_text"
         )
         return engine

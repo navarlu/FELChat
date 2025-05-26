@@ -1,0 +1,42 @@
+{
+    "id": 82,
+    "question": "How many students can the university accept?",
+    "answer": "The document does not specify enrollment quotas or admission limits for students.",
+    "article": "Not specified in the document.",
+    "out_of_scope": true,
+    "answer_generated": "The provided documents do not contain information about the number of students the university can accept.",
+    "context": "Document 1: (2) If the studies  in a doctoral  programme  are divided  into fields  of study,  Specialization  Committees  \ncan be set up for these  fields  of study  (hereinafter  as “ORO”)  that provide  expert  assessment  \nactivities  in the framework  of these  fields  of study.   Activities  undertaken  by ORO  and ORP  are \ndefined  in Para  6 to 9 hereof.   \n (3) ORP  has at least  five members,  of which  at least  two are not employees  of CTU;  ORO  chairs  are in \ntheir  capacity  also automatically  members  of ORP.   Each  ORO  has at least  five members,  of which  \nat least  two members  are not employees  of CTU.  \n (4) Professors,  docents  and other  distinguished  professionals  can become  members  of ORP  and ORO.  \n Members  of ORP  and ORO  of doctoral  study  programmes  implemented  at one faculty  are \nappointed  and dismissed  by the dean,  following  an approval  by the faculty’s  Scientific  Council  \nbased  on a proposal  of the training  centre  or the dean.   Members  of ORP  and ORO  of doctoral  \nstudy  programmes  implemented  at multiple  faculties  or doctoral  study  programmes  implemented  \noutside  faculties  are appointed  and dismissed  by the Rector,  following  an approval  by the CTU \nScientific  Council  based  on a proposal  of faculty  Scientific  Councils  or CTU institutes  or based  on a \nproposal  of workplaces  outside  CTU.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: (2) If the studies  in a doctoral  programme  are divided  into fields  of study,  Specialization  Committees  \ncan be set up for these  fields  of study  (hereinafter  as “ORO”)  that provide  expert  assessment  \nactivities  in the framework  of these  fields  of study.   Activities  undertaken  by ORO  and ORP  are \ndefined  in Para  6 to 9 hereof.   \n (3) ORP  has at least  five members,  of which  at least  two are not employees  of CTU;  ORO  chairs  are in \ntheir  capacity  also automatically  members  of ORP.   Each  ORO  has at least  five members,  of which  \nat least  two members  are not employees  of CTU.  \n (4) Professors,  docents  and other  distinguished  professionals  can become  members  of ORP  and ORO.  \n Members  of ORP  and ORO  of doctoral  study  programmes  implemented  at one faculty  are \nappointed  and dismissed  by the dean,  following  an approval  by the faculty’s  Scientific  Council  \nbased  on a proposal  of the training  centre  or the dean.   Members  of ORP  and ORO  of doctoral  \nstudy  programmes  implemented  at multiple  faculties  or doctoral  study  programmes  implemented  \noutside  faculties  are appointed  and dismissed  by the Rector,  following  an approval  by the CTU \nScientific  Council  based  on a proposal  of faculty  Scientific  Councils  or CTU institutes  or based  on a \nproposal  of workplaces  outside  CTU.  \n\n    ---------------------------------------------------------------\n    Query: How many students can the university accept?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.0,
+        "Groundedness": 1.0,
+        "Answer Relevance": 0.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.319563627243042,
+        "generation_time_sec": 2.3637990951538086,
+        "rag_total_time_sec": 3.6833627223968506,
+        "evaluation_time_sec": 3.0357658863067627,
+        "total_time_sec": 7.01997971534729
+    },
+    "token_estimates": {
+        "input_tokens": 611,
+        "output_tokens": 20,
+        "total_tokens": 631,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}

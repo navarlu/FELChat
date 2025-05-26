@@ -1,0 +1,42 @@
+{
+    "id": 30,
+    "question": "Can students take the state doctoral examination without completing the study unit?",
+    "answer": "No",
+    "article": "Article 29(1)",
+    "out_of_scope": false,
+    "answer_generated": "No. According to Article 28(17), the provisions of Para 15 and 16 on remote participation or remote defense will be used for the state doctoral examination, and Article 31(2) states that neither a whole study unit nor state doctoral examination may be recognized. This means that students cannot take the state doctoral examination without completing the study unit.",
+    "context": "Document 1: Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n28 (17) The provisions  of Para  15 and 16 on remote  participation  or remote  defe nce will be used  \nmutatis  mutandis  for the state  doctoral  examination.  \n \n Article  31 \nRecognition  of examinations  taken  during  previous  studies  in doctoral  study  programmes  \n(1) The dean  may,  upon  the doctoral  student’s  request,  recognize  examinations  that the doct oral \nstudent  has successfully  completed  in a doctoral  study  programme  before  enrolling  in the current  \ndoctoral  study  programme.   Such  an examination  is considered  as if it had been  passed  on the day \non which  it was recognized.   \n (2) Neither  a whole  study  unit nor state  doctoral  examination  may  be recognized.  \n (3) A doctoral  student  may  request  recognition  of an examination  within  five years  after  it had been  \npassed.   Later  requests  will not be granted.  \n (4) The supervisor  and the relevant  Specialization  Committee  will comment  on the request.  \n",
+    "messages": [
+        {
+            "role": "system",
+            "content": "\n    You are FEE.lix a chatbot assistant for faculty of electrical engineering in Prague. \n\n    Important Guidelines:\n    - Do not add any additional explanations or interpretations.\n    - Only use the information explicitly provided in the documents.\n    - If there is any ambiguity, simply state the data as found without making assumptions.\n    - Answer in English language.\n    - Answer exclusively what user asked about and do not add any additional information.\n    - Cite only like this: Article(10)(1). when the information is from the article 10 and point 1.\n    - Answer in a conversational tone.\n    - Keep the answer short and concise.\n    - Answer yes or no if the question is you can and then add short explanation.\n    "
+        },
+        {
+            "role": "user",
+            "content": "\n    ---------------------------------------------------------------\n    Context from retrieved documents:\n\n    Document 1: Study and Examination  Rules for Students  at CTU \n______________ _____________________________________________________________  \n \n28 (17) The provisions  of Para  15 and 16 on remote  participation  or remote  defe nce will be used  \nmutatis  mutandis  for the state  doctoral  examination.  \n \n Article  31 \nRecognition  of examinations  taken  during  previous  studies  in doctoral  study  programmes  \n(1) The dean  may,  upon  the doctoral  student’s  request,  recognize  examinations  that the doct oral \nstudent  has successfully  completed  in a doctoral  study  programme  before  enrolling  in the current  \ndoctoral  study  programme.   Such  an examination  is considered  as if it had been  passed  on the day \non which  it was recognized.   \n (2) Neither  a whole  study  unit nor state  doctoral  examination  may  be recognized.  \n (3) A doctoral  student  may  request  recognition  of an examination  within  five years  after  it had been  \npassed.   Later  requests  will not be granted.  \n (4) The supervisor  and the relevant  Specialization  Committee  will comment  on the request.  \n\n    ---------------------------------------------------------------\n    Query: Can students take the state doctoral examination without completing the study unit?\n    ---------------------------------------------------------------\n    "
+        }
+    ],
+    "feedback_scores": {
+        "Context Relevance": 0.6666666666666666,
+        "Groundedness": 0.5,
+        "Answer Relevance": 1.0
+    },
+    "evaluation_cost": {
+        "amount": 0.0,
+        "currency": "USD"
+    },
+    "timing": {
+        "retrieval_time_sec": 1.3946421146392822,
+        "generation_time_sec": 2.7987160682678223,
+        "rag_total_time_sec": 4.1933581829071045,
+        "evaluation_time_sec": 3.7824416160583496,
+        "total_time_sec": 8.355053186416626
+    },
+    "token_estimates": {
+        "input_tokens": 551,
+        "output_tokens": 0,
+        "total_tokens": 551,
+        "cost_usd": 0.0,
+        "cost_czk": 0.0
+    }
+}
