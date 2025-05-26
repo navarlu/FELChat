@@ -1,0 +1,4 @@
+frontend/fel-chat/node_modules
+frontend/fel-chat/.next
+
+backend/felchat/__pycache__
