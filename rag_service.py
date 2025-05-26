@@ -12,7 +12,7 @@ class RAGService:
         # self.server_url = "https://fe9b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
         # self.server_url = "https://924b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
         # self.server_url = "https://924b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
-        self.server_url = "https://ac9c-147-32-87-114.ngrok-free.app/chat"
+        self.server_url = "http://127.0.0.1:8003/chat"
 
 
 
