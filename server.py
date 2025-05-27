@@ -11,6 +11,9 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 
 # Model name: Llama 3 8B Instruct
+
+model_name = "distilgpt2"
+model_name = "microsoft/Phi-2"
 model_name = "tiiuae/falcon-rw-1b"
 print(f"Loading model {model_name}. Please wait...")
 
@@ -47,7 +50,7 @@ def chat():
         text += f"<|{msg['role']}|>\n{msg['content']}\n"
     text += "<|assistant|>\n"
     print("Chat template applied, resulting text:\n", text)
-
+    #text = "hi"
     # Tokenize and move to device
     inputs = tokenizer([text], return_tensors="pt").to(model.device)
     print("Inputs converted to tensor and moved to model device.")
@@ -71,4 +74,4 @@ def chat():
 
 if __name__ == "__main__":
     print("Starting Flask server locally...")
-    app.run(host="127.0.0.1", port=8003, debug=True)
+    app.run(host="0.0.0.0", port=8003, debug=True)

@@ -6,3 +6,5 @@ __pycache__/
 default.sqlite
 FELCHAT_env
 FELCHATvenv
+UI/*
+UI/frontend/fel-chat/.next/

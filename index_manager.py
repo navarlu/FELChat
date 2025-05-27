@@ -10,7 +10,7 @@ from llama_index.core.postprocessor import MetadataReplacementPostProcessor
 from llama_index.core.indices.postprocessor import SentenceTransformerRerank
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import Settings 
-
+Settings.llm = None
 
 # One global embedder – use CPU/GPU as you like
 EMBED_MODEL = HuggingFaceEmbedding(
