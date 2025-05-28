@@ -19,7 +19,7 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./UI/backend
       dockerfile: Dockerfile-backend
     command: > 
       sh -c "/wait-for-it.sh db 5432 -- \
@@ -27,7 +27,7 @@ services:
              python manage.py ensure_initial_user && \
              python manage.py runserver 0.0.0.0:8000"
     volumes:
-      - ./backend:/app
+      - ./UI/backend:/app
     ports:
       - "8000:8000"
     env_file:
@@ -40,12 +40,12 @@ services:
 
   frontend:
     build:
-      context: ./frontend/fel-chat
+      context: ./UI/frontend/fel-chat
       dockerfile: Dockerfile-frontend
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend/fel-chat:/app
+      - ./UI/frontend/fel-chat:/app
       - /app/node_modules
     depends_on:
       - backend
