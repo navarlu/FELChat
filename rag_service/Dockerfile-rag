@@ -1,0 +1,39 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the requirements file into the working directory
+# This assumes requirements.txt is in the rag_service directory (the build context)
+COPY requirements.txt .
+
+# Install any needed packages specified in requirements.txt
+# Upgrade pip and then install, using --no-cache-dir to reduce image size
+RUN python -m pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code from the rag_service directory
+# (which is the build context) into the working directory /app
+COPY . .
+
+# The main.py script reads 'data/configuration/config.json'.
+# This means when main.py runs (from /app), it will look for /app/data/...
+# We will mount the host's ./data directory to /app/data using a volume
+# in docker-compose.yml.
+
+# The Flask app inside main.py needs to listen on 0.0.0.0 to be accessible
+# from outside the container (i.e., from the host or other containers).
+# The config.json should reflect this for FLASK_HOST.
+# For example: "flask": { "host": "0.0.0.0", "port": 5000, ... }
+
+# Expose the port the app runs on (as defined in your config.json for Flask)
+# This is documentation; actual mapping is in docker-compose.yml.
+# Assuming FLASK_PORT is 5000 and STREAMLIT_PORT is 8501 from a typical config.
+# Adjust these if your config.json has different values.
+EXPOSE 5000
+EXPOSE 8501
+
+# Command to run the application
+# This will execute /app/main.py
+CMD ["python", "main.py"]

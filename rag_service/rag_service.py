@@ -1,24 +1,18 @@
-# rag_service.py
-
+# rag_service/rag_service.py
 
 import requests
 import re
 import time
+import os # <--- ADD THIS IMPORT
+
 class RAGService:
     def __init__(self, index_manager):
         self.index_manager = index_manager
-        
         self.conversation_history = []
-        # self.server_url = "https://fe9b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
-        # self.server_url = "https://924b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
-        # self.server_url = "https://924b-2001-718-2-1634-9edc-71ff-fe40-7be2.ngrok-free.app/chat"
-        self.server_url = "http://localhost:8003/chat"
+        
+        default_llm_server_url = "http://localhost:8003/chat" # Default for local, non-Docker runs
+        self.server_url = os.getenv("LLM_CHAT_SERVER_URL", default_llm_server_url)
 
-
-
-
-
-    
     def retrieve(self, query: str) -> list:
         """
         Use the manager's (sentence-window) query engine for retrieval.
@@ -140,9 +134,4 @@ class RAGService:
             else:
                 return full_response.strip()
         else:
-            return f"Chyba: {response.status_code} - {response.text}"
-
-
-    
-     
-
+            return f"error: {response.status_code} - {response.text}"

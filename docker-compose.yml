@@ -55,5 +55,23 @@ services:
     stdin_open: true
     tty: true
 
+  rag-service:
+    build:
+      context: ./rag_service     
+      dockerfile: Dockerfile-rag  
+    container_name: rag_service_app
+    ports:
+      - "5000:5000"
+      - "8501:8501"
+    volumes:
+      - ./rag_service/data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      -  LLM_CHAT_SERVER_URL=http://llm_service_container_name:8003/chat 
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+
 volumes:
   postgres_data:
