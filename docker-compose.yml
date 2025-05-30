@@ -67,7 +67,7 @@ services:
       - ./rag_service/data:/app/data
     environment:
       - PYTHONUNBUFFERED=1
-      -  LLM_CHAT_SERVER_URL=http://llm_service_container_name:8003/chat 
+      -  LLM_CHAT_SERVER_URL=http://host.docker.internal:8003/chat 
     restart: unless-stopped
     depends_on:
       - backend

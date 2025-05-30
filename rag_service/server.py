@@ -11,16 +11,19 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 
 # Choose ONE model to load
-model_name = "tiiuae/falcon-rw-1b"  # or "microsoft/phi-2", "distilgpt2"
+model_name = "tiiuae/Falcon3-10b-instruct"  # or "microsoft/phi-2", "distilgpt2"
 print(f"Loading model {model_name}. Please wait...")
 
 # Load model and tokenizer
 try:
+    offload_folder = "rag_service/offload"
+
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.float16 if device == "cuda" else torch.float32,
         low_cpu_mem_usage=True,
-        device_map="auto",  # Auto-assign model to available device
+        device_map="auto",
+        offload_folder=offload_folder
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     print("Model and tokenizer successfully loaded!")
@@ -29,7 +32,7 @@ except Exception as e:
     raise e
 
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(_name_)
 print("Flask app initialized.")
 
 # Chat endpoint
@@ -47,6 +50,7 @@ def chat():
     print("Chat template applied, resulting text:\n", text)
 
     # Tokenize and move inputs to model device
+    text = "hi"
     inputs = tokenizer([text], return_tensors="pt").to(model.device)
     print("Inputs converted to tensor and moved to model device.")
 
@@ -70,4 +74,4 @@ def chat():
 # Start the server
 if __name__ == "__main__":
     print("Starting Flask server locally...")
-    app.run(host="0.0.0.0", port=8003, debug=True)
+    app.run(host="127.0.0.1", port=8003, debug=False, use_reloader=False)

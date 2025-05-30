@@ -10,7 +10,7 @@ class RAGService:
         self.index_manager = index_manager
         self.conversation_history = []
         
-        default_llm_server_url = "http://localhost:8003/chat" # Default for local, non-Docker runs
+        default_llm_server_url = "http://host.docker.internal:8003/chat" # Default for local, non-Docker runs
         self.server_url = os.getenv("LLM_CHAT_SERVER_URL", default_llm_server_url)
 
     def retrieve(self, query: str) -> list:
@@ -120,7 +120,7 @@ class RAGService:
             answer = self.send_prompt(messages)
             return answer, context, messages
         except Exception as e:
-            return f"Error generating response: {str(e)}"
+            return f"Error generating response: {str(e)}", "", []
      
 
     def send_prompt(self,prompt):
