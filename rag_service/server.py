@@ -50,7 +50,7 @@ def chat():
     print("Chat template applied, resulting text:\n", text)
 
     # Tokenize and move inputs to model device
-    text = "hi"
+    
     inputs = tokenizer([text], return_tensors="pt").to(model.device)
     print("Inputs converted to tensor and moved to model device.")
 
