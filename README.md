@@ -9,7 +9,7 @@ Ensure your system has the following:
 - **Python**: 3.12
 - **Docker**: Installed and running
 - **NVIDIA CUDA**: Installed for GPU support
-- **GPU**: Available with at least 30GB of free space
+- **GPU**:
 - **Disk Space**: At least 30GB free
 
 ## Installation Steps
